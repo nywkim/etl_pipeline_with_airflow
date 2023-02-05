@@ -1,5 +1,0 @@
-day,hour,track_id,track_name,artist_id,artist_name,acousticness,danceability,energy,liveness,loudness,instrumentalness,speechiness,tempo,valence,duration(ms),mode,key
-2023-01-25,20,5lh5eRZDsMC19G0DruLYTX,HALAZIA,68KmkJeZGfwe1OUaivBa2L,ATEEZ,0.000638,0.483,0.884,0.0884,-4.538,0.00056,0.0623,171.888,0.391,197034,0,6
-2023-01-25,20,0TQoxRybRBuKktu7VKA92w,BIBI Vengeance,6UbmqUEgjLA6jAcXwbM1Z9,BIBI,0.0283,0.442,0.75,0.0628,-4.719,0.000155,0.0908,99.992,0.41,165135,0,11
-2023-01-25,20,2UP7KnRSvc4taXbjOoSX0f,Say My Name,68KmkJeZGfwe1OUaivBa2L,ATEEZ,0.212,0.634,0.9,0.317,-2.614,0.0,0.0583,152.968,0.623,222024,0,6
-2023-01-25,20,1hYQUY06GbO7YR8QeO7Qdk,On A Ride,1z4g3DjTBBZKhvAroFlhOM,Red Velvet,0.106,0.817,0.825,0.114,-2.9,2.54e-05,0.0384,104.984,0.655,199000,0,11
