@@ -1,0 +1,6 @@
+standalone_admin_password.txt
+airflow.db
+airflow_etl_pipeline/
+spotify_dag/__pycache__
+spotify_dag/prac.py
+spotify_dag/secret.py
