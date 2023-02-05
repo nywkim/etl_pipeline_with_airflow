@@ -1,0 +1,80 @@
+[2023-01-24T12:29:53.922+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl manual__2023-01-24T12:29:51.149394+00:00 [queued]>
+[2023-01-24T12:29:53.928+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl manual__2023-01-24T12:29:51.149394+00:00 [queued]>
+[2023-01-24T12:29:53.928+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-24T12:29:53.928+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-24T12:29:53.928+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-24T12:29:53.942+0000] {taskinstance.py:1383} INFO - Executing <Task(BranchPythonOperator): spotify_etl> on 2023-01-24 12:29:51.149394+00:00
+[2023-01-24T12:29:53.944+0000] {standard_task_runner.py:55} INFO - Started process 2800 to run task
+[2023-01-24T12:29:53.948+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'spotify_etl', 'manual__2023-01-24T12:29:51.149394+00:00', '--job-id', '262', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmpp7anpr46']
+[2023-01-24T12:29:53.950+0000] {standard_task_runner.py:83} INFO - Job 262: Subtask spotify_etl
+[2023-01-24T12:29:53.988+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.spotify_etl manual__2023-01-24T12:29:51.149394+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-24T12:29:54.017+0000] {logging_mixin.py:120} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/utils/context.py:204 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-01-24T12:29:54.050+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=spotify_etl
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-24T12:29:51.149394+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-24T12:29:51.149394+00:00
+[2023-01-24T12:29:55.378+0000] {logging_mixin.py:120} WARNING - /usr/local/lib/python3.10/dist-packages/botocore/utils.py:1720 FutureWarning: The S3RegionRedirector class has been deprecated for a new internal replacement. A future version of botocore may remove this class.
+[2023-01-24T12:29:56.781+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/s3fs/core.py", line 110, in _error_wrapper
+    return await func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiobotocore/client.py", line 358, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 211, in execute
+    branch = super().execute(context)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/spotify_dag/spotify_dags.py", line 84, in find_songs
+    df.to_csv(file_path, header=True, index=False)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/core/generic.py", line 3721, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/format.py", line 1189, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/csvs.py", line 241, in save
+    with get_handle(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 134, in __exit__
+    self.close()
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 126, in close
+    handle.close()
+  File "/usr/local/lib/python3.10/dist-packages/fsspec/spec.py", line 1661, in close
+    self.flush(force=True)
+  File "/usr/local/lib/python3.10/dist-packages/fsspec/spec.py", line 1532, in flush
+    if self._upload_chunk(final=force) is not False:
+  File "/usr/local/lib/python3.10/dist-packages/s3fs/core.py", line 2103, in _upload_chunk
+    self.commit()
+  File "/usr/local/lib/python3.10/dist-packages/s3fs/core.py", line 2118, in commit
+    write_result = self._call_s3(
+  File "/usr/local/lib/python3.10/dist-packages/s3fs/core.py", line 1970, in _call_s3
+    return self.fs.call_s3(method, self.s3_additional_kwargs, *kwarglist, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/fsspec/asyn.py", line 111, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/fsspec/asyn.py", line 96, in sync
+    raise return_result
+  File "/usr/local/lib/python3.10/dist-packages/fsspec/asyn.py", line 53, in _runner
+    result[0] = await coro
+  File "/usr/local/lib/python3.10/dist-packages/s3fs/core.py", line 332, in _call_s3
+    return await _error_wrapper(
+  File "/usr/local/lib/python3.10/dist-packages/s3fs/core.py", line 137, in _error_wrapper
+    raise err
+PermissionError: Access Denied
+[2023-01-24T12:29:56.788+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_dag, task_id=spotify_etl, execution_date=20230124T122951, start_date=20230124T122953, end_date=20230124T122956
+[2023-01-24T12:29:56.802+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 262 for task spotify_etl (Access Denied; 2800)
+[2023-01-24T12:29:56.812+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-24T12:29:56.828+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

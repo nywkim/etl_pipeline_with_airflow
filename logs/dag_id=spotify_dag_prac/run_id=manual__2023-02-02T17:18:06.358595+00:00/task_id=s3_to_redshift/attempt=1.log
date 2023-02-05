@@ -1,0 +1,37 @@
+[2023-02-02T17:18:08.388+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-02-02T17:18:06.358595+00:00 [queued]>
+[2023-02-02T17:18:08.393+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-02-02T17:18:06.358595+00:00 [queued]>
+[2023-02-02T17:18:08.394+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T17:18:08.394+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-02-02T17:18:08.394+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T17:18:08.407+0000] {taskinstance.py:1383} INFO - Executing <Task(S3ToRedshiftOperator): s3_to_redshift> on 2023-02-02 17:18:06.358595+00:00
+[2023-02-02T17:18:08.409+0000] {standard_task_runner.py:55} INFO - Started process 23938 to run task
+[2023-02-02T17:18:08.413+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag_prac', 's3_to_redshift', 'manual__2023-02-02T17:18:06.358595+00:00', '--job-id', '594', '--raw', '--subdir', 'DAGS_FOLDER/prac.py', '--cfg-path', '/tmp/tmp2wc4hm9_']
+[2023-02-02T17:18:08.414+0000] {standard_task_runner.py:83} INFO - Job 594: Subtask s3_to_redshift
+[2023-02-02T17:18:08.451+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-02-02T17:18:06.358595+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-02-02T17:18:08.502+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag_prac
+AIRFLOW_CTX_TASK_ID=s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-02T17:18:06.358595+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-02T17:18:06.358595+00:00
+[2023-02-02T17:18:08.507+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-02-02T17:18:08.509+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-02-02T17:18:08.509+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-02-02T17:18:08.518+0000] {s3_to_redshift.py:164} INFO - Executing COPY command...
+[2023-02-02T17:18:08.520+0000] {base.py:71} INFO - Using connection ID 'redshift_default' for task execution.
+[2023-02-02T17:18:08.536+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2023-02-02T17:18:08.902+0000] {sql.py:375} INFO - Running statement: 
+                    COPY spotify.test 
+                    FROM 's3://airflow-nk/listen_records_by_artists_test'
+                    credentials
+                    'aws_access_key_id=AKIA2RZBA5HRP7SVZGJC;aws_secret_access_key=***'
+                    FORMAT AS PARQUET;
+        , parameters: None
+[2023-02-02T17:18:09.093+0000] {s3_to_redshift.py:166} INFO - COPY command complete...
+[2023-02-02T17:18:09.097+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=spotify_dag_prac, task_id=s3_to_redshift, execution_date=20230202T171806, start_date=20230202T171808, end_date=20230202T171809
+[2023-02-02T17:18:09.146+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-02-02T17:18:09.156+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

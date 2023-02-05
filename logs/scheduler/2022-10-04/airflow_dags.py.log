@@ -1,0 +1,564 @@
+[2022-10-04T03:08:52.641+0000] {processor.py:156} INFO - Started process (PID=7667) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:08:52.642+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:08:52.643+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:52.642+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:08:53.699+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:08:54.051+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:54.051+0000] {manager.py:508} INFO - Created Permission View: can read on DAG:spotify_dag
+[2022-10-04T03:08:54.087+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:54.087+0000] {manager.py:508} INFO - Created Permission View: can delete on DAG:spotify_dag
+[2022-10-04T03:08:54.119+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:54.119+0000] {manager.py:508} INFO - Created Permission View: can edit on DAG:spotify_dag
+[2022-10-04T03:08:54.119+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:54.119+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:08:54.153+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:54.153+0000] {dag.py:2594} INFO - Creating ORM DAG for spotify_dag
+[2022-10-04T03:08:54.198+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:08:54.198+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:08:54.258+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 1.620 seconds
+[2022-10-04T03:09:37.877+0000] {processor.py:156} INFO - Started process (PID=7713) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:09:37.878+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:09:37.878+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:09:37.878+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:09:38.271+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:09:38.288+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:09:38.288+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:09:38.303+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:09:38.303+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:09:38.322+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.447 seconds
+[2022-10-04T03:10:15.709+0000] {processor.py:156} INFO - Started process (PID=7762) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:10:15.710+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:10:15.711+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:10:15.711+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:10:16.064+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:10:16.081+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:10:16.080+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:10:16.095+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:10:16.095+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:10:16.114+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.408 seconds
+[2022-10-04T03:10:46.311+0000] {processor.py:156} INFO - Started process (PID=7789) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:10:46.312+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:10:46.312+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:10:46.312+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:10:46.658+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:10:46.674+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:10:46.674+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:10:46.691+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:10:46.691+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:10:46.711+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.402 seconds
+[2022-10-04T03:11:21.309+0000] {processor.py:156} INFO - Started process (PID=7827) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:11:21.310+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:11:21.310+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:11:21.310+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:11:21.730+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:11:21.749+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:11:21.749+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:11:21.767+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:11:21.767+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:11:21.791+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.485 seconds
+[2022-10-04T03:12:00.391+0000] {processor.py:156} INFO - Started process (PID=7864) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:12:00.392+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:12:00.392+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:12:00.392+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:12:00.712+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:12:00.727+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:12:00.727+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:12:00.742+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:12:00.742+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:12:00.761+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.373 seconds
+[2022-10-04T03:12:36.971+0000] {processor.py:156} INFO - Started process (PID=7903) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:12:36.972+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:12:36.973+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:12:36.973+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:12:37.316+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:12:37.332+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:12:37.332+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:12:37.356+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:12:37.356+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:12:37.377+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.408 seconds
+[2022-10-04T03:13:10.755+0000] {processor.py:156} INFO - Started process (PID=7936) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:13:10.756+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:13:10.756+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:13:10.756+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:13:11.065+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:13:11.080+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:13:11.080+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:13:11.095+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:13:11.095+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:13:11.115+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.363 seconds
+[2022-10-04T03:13:42.475+0000] {processor.py:156} INFO - Started process (PID=7968) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:13:42.476+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:13:42.476+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:13:42.476+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:13:42.811+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:13:42.827+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:13:42.827+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:13:42.844+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:13:42.844+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:13:42.865+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.393 seconds
+[2022-10-04T03:14:15.863+0000] {processor.py:156} INFO - Started process (PID=8001) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:14:15.864+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:14:15.865+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:14:15.865+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:14:16.193+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:14:16.210+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:14:16.210+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:14:16.224+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:14:16.224+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:14:16.245+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.384 seconds
+[2022-10-04T03:14:52.478+0000] {processor.py:156} INFO - Started process (PID=8039) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:14:52.480+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:14:52.480+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:14:52.480+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:14:52.800+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:14:52.817+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:14:52.816+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:14:52.832+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:14:52.831+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:14:52.851+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.375 seconds
+[2022-10-04T03:15:34.026+0000] {processor.py:156} INFO - Started process (PID=8080) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:15:34.028+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:15:34.028+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:15:34.028+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:15:34.345+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:15:34.361+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:15:34.361+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:15:34.376+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:15:34.376+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:15:34.395+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.371 seconds
+[2022-10-04T03:16:11.117+0000] {processor.py:156} INFO - Started process (PID=8114) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:16:11.118+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:16:11.119+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:16:11.119+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:16:11.503+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:16:11.529+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:16:11.529+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:16:11.546+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:16:11.546+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:16:11.567+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.453 seconds
+[2022-10-04T03:16:50.175+0000] {processor.py:156} INFO - Started process (PID=8251) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:16:50.176+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:16:50.177+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:16:50.177+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:16:50.585+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:16:50.601+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:16:50.601+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:16:50.618+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:16:50.618+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:16:50.638+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.466 seconds
+[2022-10-04T03:17:31.209+0000] {processor.py:156} INFO - Started process (PID=8609) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:17:31.210+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:17:31.211+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:17:31.211+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:17:31.550+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:17:31.566+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:17:31.566+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:17:31.582+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:17:31.582+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:17:31.601+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.395 seconds
+[2022-10-04T03:18:12.583+0000] {processor.py:156} INFO - Started process (PID=8646) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:18:12.584+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:18:12.585+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:18:12.585+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:18:12.918+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:18:12.934+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:18:12.934+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:18:12.951+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:18:12.951+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:18:12.971+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.390 seconds
+[2022-10-04T03:18:32.874+0000] {processor.py:156} INFO - Started process (PID=8670) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:18:32.875+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:18:32.886+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:18:32.886+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:18:33.356+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:18:33.368+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:18:33.368+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:18:33.392+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:18:33.392+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:18:33.419+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.548 seconds
+[2022-10-04T03:19:11.723+0000] {processor.py:156} INFO - Started process (PID=8716) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:19:11.724+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:19:11.724+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:19:11.724+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:19:12.138+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:19:12.158+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:19:12.158+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:19:12.202+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:19:12.202+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:19:12.232+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.512 seconds
+[2022-10-04T03:19:46.415+0000] {processor.py:156} INFO - Started process (PID=8754) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:19:46.417+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:19:46.417+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:19:46.417+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:19:46.858+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:19:46.880+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:19:46.880+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:19:46.901+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:19:46.901+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:19:46.931+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.518 seconds
+[2022-10-04T03:20:22.007+0000] {processor.py:156} INFO - Started process (PID=8788) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:20:22.008+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:20:22.008+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:20:22.008+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:20:22.349+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:20:22.364+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:20:22.364+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:20:22.379+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:20:22.379+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:20:22.400+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.396 seconds
+[2022-10-04T03:21:01.141+0000] {processor.py:156} INFO - Started process (PID=8828) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:21:01.143+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:21:01.145+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:21:01.145+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:21:01.829+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:21:01.845+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:21:01.845+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:21:01.860+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:21:01.860+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:21:01.882+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.746 seconds
+[2022-10-04T03:21:38.678+0000] {processor.py:156} INFO - Started process (PID=8864) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:21:38.679+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:21:38.680+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:21:38.679+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:21:39.041+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:21:39.057+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:21:39.057+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:21:39.074+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:21:39.074+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:21:39.095+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.420 seconds
+[2022-10-04T03:22:09.306+0000] {processor.py:156} INFO - Started process (PID=8894) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:22:09.307+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:22:09.308+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:22:09.307+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:22:09.689+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:22:09.704+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:22:09.704+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:22:09.720+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:22:09.720+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:22:09.739+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.436 seconds
+[2022-10-04T03:22:41.069+0000] {processor.py:156} INFO - Started process (PID=8929) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:22:41.071+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:22:41.072+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:22:41.072+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:22:41.516+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:22:41.538+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:22:41.538+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:22:41.561+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:22:41.560+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:22:41.588+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.522 seconds
+[2022-10-04T03:23:31.725+0000] {processor.py:156} INFO - Started process (PID=8978) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:23:31.726+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:23:31.727+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:23:31.726+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:23:32.195+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:23:32.207+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:23:32.207+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:23:32.231+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:23:32.231+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:23:32.264+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.542 seconds
+[2022-10-04T03:24:11.692+0000] {processor.py:156} INFO - Started process (PID=9026) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:24:11.694+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:24:11.694+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:24:11.694+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:24:12.037+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:24:12.056+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:24:12.056+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:24:12.072+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:24:12.072+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:24:12.093+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.404 seconds
+[2022-10-04T03:24:44.186+0000] {processor.py:156} INFO - Started process (PID=9059) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:24:44.188+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:24:44.188+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:24:44.188+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:24:44.544+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:24:44.562+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:24:44.562+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:24:44.577+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:24:44.577+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:24:44.600+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.416 seconds
+[2022-10-04T03:25:23.773+0000] {processor.py:156} INFO - Started process (PID=9100) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:25:23.775+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:25:23.775+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:25:23.775+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:25:24.138+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:25:24.159+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:25:24.159+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:25:24.174+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:25:24.174+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:25:24.193+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.423 seconds
+[2022-10-04T03:26:04.123+0000] {processor.py:156} INFO - Started process (PID=9142) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:26:04.125+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:26:04.125+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:26:04.125+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:26:04.637+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:26:04.649+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:26:04.649+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:26:04.676+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:26:04.676+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:26:04.705+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.585 seconds
+[2022-10-04T03:26:46.934+0000] {processor.py:156} INFO - Started process (PID=9192) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:26:46.936+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:26:46.936+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:26:46.936+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:26:47.328+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:26:47.347+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:26:47.347+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:26:47.365+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:26:47.365+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:26:47.386+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.455 seconds
+[2022-10-04T03:30:07.774+0000] {processor.py:156} INFO - Started process (PID=9236) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:30:07.775+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:30:07.776+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:30:07.776+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:30:08.259+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:30:08.271+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:30:08.271+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:30:08.294+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:30:08.294+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:30:08.322+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.551 seconds
+[2022-10-04T03:30:52.944+0000] {processor.py:156} INFO - Started process (PID=9289) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:30:52.945+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:30:52.946+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:30:52.946+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:30:53.340+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:30:53.358+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:30:53.358+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:30:53.375+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:30:53.375+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:30:53.395+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.454 seconds
+[2022-10-04T03:31:30.668+0000] {processor.py:156} INFO - Started process (PID=9325) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:31:30.670+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:31:30.671+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:31:30.671+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:31:31.096+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:31:31.115+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:31:31.114+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:31:31.129+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:31:31.129+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:31:31.149+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.483 seconds
+[2022-10-04T03:32:03.478+0000] {processor.py:156} INFO - Started process (PID=9375) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:32:03.479+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:32:03.480+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:32:03.480+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:32:03.861+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:32:03.885+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:32:03.885+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:32:03.907+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:32:03.907+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:32:03.928+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.453 seconds
+[2022-10-04T03:32:36.267+0000] {processor.py:156} INFO - Started process (PID=9411) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:32:36.267+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:32:36.268+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:32:36.268+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:32:36.627+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:32:36.645+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:32:36.645+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:32:36.660+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:32:36.660+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:32:36.679+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.415 seconds
+[2022-10-04T03:33:13.840+0000] {processor.py:156} INFO - Started process (PID=9448) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:33:13.841+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:33:13.842+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:33:13.842+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:33:14.375+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:33:14.392+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:33:14.392+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:33:14.407+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:33:14.407+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:33:14.427+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.593 seconds
+[2022-10-04T03:33:51.383+0000] {processor.py:156} INFO - Started process (PID=9489) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:33:51.384+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:33:51.385+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:33:51.385+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:33:51.757+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:33:51.773+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:33:51.773+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:33:51.788+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:33:51.788+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:33:51.809+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.429 seconds
+[2022-10-04T03:34:30.564+0000] {processor.py:156} INFO - Started process (PID=9530) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:34:30.565+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:34:30.566+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:34:30.566+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:34:30.952+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:34:30.975+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:34:30.975+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:34:30.992+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:34:30.991+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:34:31.013+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.452 seconds
+[2022-10-04T03:46:04.027+0000] {processor.py:156} INFO - Started process (PID=951) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:46:04.030+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:46:04.030+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:46:04.030+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:46:04.536+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:46:04.548+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:46:04.548+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:46:04.575+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:46:04.575+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:46:04.604+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.580 seconds
+[2022-10-04T03:46:44.820+0000] {processor.py:156} INFO - Started process (PID=1005) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:46:44.822+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:46:44.822+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:46:44.822+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:46:45.216+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:46:45.233+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:46:45.233+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:46:45.249+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:46:45.249+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:46:45.269+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.452 seconds
+[2022-10-04T03:47:21.691+0000] {processor.py:156} INFO - Started process (PID=1042) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:47:21.693+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:47:21.693+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:47:21.693+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:47:22.141+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:47:22.163+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:47:22.162+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:47:22.182+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:47:22.181+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:47:22.212+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.523 seconds
+[2022-10-04T03:47:52.578+0000] {processor.py:156} INFO - Started process (PID=1139) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:47:52.579+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:47:52.579+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:47:52.579+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:47:52.997+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:47:53.019+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:47:53.018+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:47:53.036+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:47:53.036+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:47:53.059+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.484 seconds
+[2022-10-04T03:48:28.312+0000] {processor.py:156} INFO - Started process (PID=1175) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:48:28.314+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:48:28.314+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:48:28.314+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:48:28.727+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:48:28.760+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:48:28.759+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:48:28.777+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:48:28.777+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:48:28.801+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.492 seconds
+[2022-10-04T03:48:58.895+0000] {processor.py:156} INFO - Started process (PID=1206) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:48:58.896+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:48:58.897+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:48:58.897+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:48:59.313+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:48:59.331+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:48:59.331+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:48:59.346+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:48:59.346+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:48:59.366+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.474 seconds
+[2022-10-04T03:49:23.461+0000] {processor.py:156} INFO - Started process (PID=1225) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:49:23.462+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:49:23.463+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:49:23.463+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:49:24.047+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:49:24.059+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:49:24.059+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:49:24.082+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:49:24.082+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:49:24.112+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.654 seconds
+[2022-10-04T03:50:08.659+0000] {processor.py:156} INFO - Started process (PID=1279) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:50:08.661+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:50:08.661+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:50:08.661+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:50:09.015+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:50:09.033+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:50:09.033+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:50:09.048+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:50:09.048+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:50:09.068+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.411 seconds
+[2022-10-04T03:50:48.085+0000] {processor.py:156} INFO - Started process (PID=1317) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:50:48.087+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:50:48.087+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:50:48.087+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:50:48.491+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:50:48.511+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:50:48.511+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:50:48.529+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:50:48.529+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:50:48.550+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.469 seconds
+[2022-10-04T03:51:24.790+0000] {processor.py:156} INFO - Started process (PID=1358) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:51:24.792+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:51:24.792+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:51:24.792+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:51:25.183+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:51:25.206+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:51:25.205+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:51:25.235+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:51:25.235+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:51:25.257+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.469 seconds
+[2022-10-04T03:51:55.599+0000] {processor.py:156} INFO - Started process (PID=1387) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:51:55.600+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:51:55.600+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:51:55.600+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:51:55.975+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:51:55.993+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:51:55.993+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:51:56.008+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:51:56.008+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:51:56.031+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.435 seconds
+[2022-10-04T03:52:35.272+0000] {processor.py:156} INFO - Started process (PID=1426) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:52:35.274+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:52:35.274+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:52:35.274+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:52:35.668+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:52:35.687+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:52:35.687+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:52:35.702+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:52:35.702+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:52:35.724+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.455 seconds
+[2022-10-04T03:53:13.237+0000] {processor.py:156} INFO - Started process (PID=1463) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:53:13.238+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:53:13.239+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:53:13.239+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:53:13.635+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:53:13.653+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:53:13.653+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:53:13.670+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:53:13.670+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:53:13.706+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.472 seconds
+[2022-10-04T03:53:47.620+0000] {processor.py:156} INFO - Started process (PID=1496) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:53:47.622+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:53:47.622+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:53:47.622+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:53:48.031+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:53:48.048+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:53:48.048+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:53:48.067+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:53:48.067+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:53:48.099+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.483 seconds
+[2022-10-04T03:54:34.656+0000] {processor.py:156} INFO - Started process (PID=1564) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:54:34.658+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:54:34.658+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:54:34.658+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:54:35.164+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:54:35.176+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:54:35.176+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:54:35.200+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:54:35.199+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:54:35.231+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.578 seconds
+[2022-10-04T03:55:18.688+0000] {processor.py:156} INFO - Started process (PID=1613) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:55:18.689+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:55:18.690+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:55:18.690+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:55:19.086+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:55:19.103+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:55:19.103+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:55:19.119+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:55:19.119+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:55:19.140+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.455 seconds
+[2022-10-04T03:55:54.483+0000] {processor.py:156} INFO - Started process (PID=1635) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:55:54.485+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T03:55:54.485+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:55:54.485+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:55:55.003+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T03:55:55.015+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:55:55.015+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T03:55:55.039+0000] {logging_mixin.py:117} INFO - [2022-10-04T03:55:55.039+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T03:55:55.071+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.591 seconds
+[2022-10-04T04:04:31.214+0000] {processor.py:156} INFO - Started process (PID=1670) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:04:31.215+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:04:31.216+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:04:31.216+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:04:31.746+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:04:31.759+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:04:31.759+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:04:31.771+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:04:31.771+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:04:31.792+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.582 seconds
+[2022-10-04T04:23:58.662+0000] {processor.py:156} INFO - Started process (PID=1707) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:23:58.663+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:23:58.664+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:23:58.664+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:23:59.083+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:23:59.092+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:23:59.092+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:23:59.105+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:23:59.105+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:23:59.124+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.466 seconds
+[2022-10-04T04:30:13.545+0000] {processor.py:156} INFO - Started process (PID=1720) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:30:13.546+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:30:13.547+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:30:13.547+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:30:14.011+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:30:14.020+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:30:14.020+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:30:14.033+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:30:14.033+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:30:14.052+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.510 seconds
+[2022-10-04T04:32:36.338+0000] {processor.py:156} INFO - Started process (PID=1727) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:32:36.340+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:32:36.340+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:32:36.340+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:32:36.792+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:32:36.802+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:32:36.802+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:32:36.815+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:32:36.815+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:32:36.836+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.501 seconds
+[2022-10-04T04:35:21.477+0000] {processor.py:156} INFO - Started process (PID=1759) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:35:21.479+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:35:21.479+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:35:21.479+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:35:22.063+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:35:22.076+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:35:22.075+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:35:22.101+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:35:22.100+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:35:22.128+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.654 seconds
+[2022-10-04T04:36:04.651+0000] {processor.py:156} INFO - Started process (PID=1810) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:36:04.652+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:36:04.653+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:36:04.653+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:36:05.066+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:36:05.083+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:36:05.083+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:36:05.098+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:36:05.098+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:36:05.121+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.473 seconds
+[2022-10-04T04:36:56.217+0000] {processor.py:156} INFO - Started process (PID=1843) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:36:56.219+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:36:56.219+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:36:56.219+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:36:56.796+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:36:56.809+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:36:56.809+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:36:56.833+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:36:56.833+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:36:56.860+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.646 seconds
+[2022-10-04T04:40:28.554+0000] {processor.py:156} INFO - Started process (PID=1912) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:40:28.556+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:40:28.557+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:40:28.556+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:40:29.147+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:40:29.160+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:40:29.159+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:40:29.184+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:40:29.184+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:40:29.213+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.662 seconds
+[2022-10-04T04:41:38.409+0000] {processor.py:156} INFO - Started process (PID=1926) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:41:38.410+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:41:38.411+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:41:38.411+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:41:38.820+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:41:38.833+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:41:38.833+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:41:38.846+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:41:38.845+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:41:38.865+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.459 seconds
+[2022-10-04T04:42:51.525+0000] {processor.py:156} INFO - Started process (PID=1952) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:42:51.527+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:42:51.527+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:42:51.527+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:42:52.130+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:42:52.144+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:42:52.143+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:42:52.169+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:42:52.169+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:42:52.196+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.675 seconds
+[2022-10-04T04:45:38.709+0000] {processor.py:156} INFO - Started process (PID=1985) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:45:38.711+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:45:38.711+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:45:38.711+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:45:39.115+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:45:39.129+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:45:39.129+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:45:39.145+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:45:39.145+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:45:39.164+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.458 seconds
+[2022-10-04T04:46:15.561+0000] {processor.py:156} INFO - Started process (PID=2024) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:46:15.563+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:46:15.563+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:46:15.563+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:46:16.006+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:46:16.020+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:46:16.020+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:46:16.032+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:46:16.032+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:46:16.052+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.494 seconds
+[2022-10-04T04:46:50.725+0000] {processor.py:156} INFO - Started process (PID=2058) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:46:50.726+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:46:50.727+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:46:50.727+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:46:51.230+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:46:51.247+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:46:51.247+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:46:51.262+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:46:51.262+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:46:51.281+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.559 seconds
+[2022-10-04T04:47:29.681+0000] {processor.py:156} INFO - Started process (PID=2095) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:47:29.682+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:47:29.683+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:47:29.683+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:47:30.186+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:47:30.200+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:47:30.199+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:47:30.212+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:47:30.211+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:47:30.231+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.554 seconds
+[2022-10-04T04:48:03.870+0000] {processor.py:156} INFO - Started process (PID=2130) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:48:03.872+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:48:03.872+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:48:03.872+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:48:04.289+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:48:04.303+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:48:04.302+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:48:04.315+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:48:04.315+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:48:04.336+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.468 seconds
+[2022-10-04T04:48:40.136+0000] {processor.py:156} INFO - Started process (PID=2167) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:48:40.138+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:48:40.138+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:48:40.138+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:48:40.615+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:48:40.628+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:48:40.628+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:48:40.642+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:48:40.642+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:48:40.661+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.528 seconds
+[2022-10-04T04:49:18.173+0000] {processor.py:156} INFO - Started process (PID=2205) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:49:18.174+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:49:18.174+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:49:18.174+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:49:18.767+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:49:18.785+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:49:18.785+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:49:18.799+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:49:18.799+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:49:18.831+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.663 seconds
+[2022-10-04T04:49:52.922+0000] {processor.py:156} INFO - Started process (PID=2239) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:49:52.923+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:49:52.924+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:49:52.924+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:49:53.338+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:49:53.352+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:49:53.352+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:49:53.364+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:49:53.364+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:49:53.383+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.464 seconds
+[2022-10-04T04:50:23.639+0000] {processor.py:156} INFO - Started process (PID=2270) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:50:23.640+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:50:23.640+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:50:23.640+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:50:24.067+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:50:24.084+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:50:24.084+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:50:24.097+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:50:24.096+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:50:24.117+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.482 seconds
+[2022-10-04T04:50:58.395+0000] {processor.py:156} INFO - Started process (PID=2305) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:50:58.396+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:50:58.397+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:50:58.397+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:50:58.920+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:50:58.933+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:50:58.933+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:50:58.947+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:50:58.947+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:50:58.967+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.576 seconds
+[2022-10-04T04:51:36.263+0000] {processor.py:156} INFO - Started process (PID=2343) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:51:36.265+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:51:36.265+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:51:36.265+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:51:36.753+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:51:36.768+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:51:36.768+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:51:36.782+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:51:36.782+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:51:36.802+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.542 seconds
+[2022-10-04T04:52:14.396+0000] {processor.py:156} INFO - Started process (PID=2381) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:52:14.397+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:52:14.398+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:52:14.398+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:52:15.121+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:52:15.169+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:52:15.168+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:52:15.206+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:52:15.205+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:52:15.244+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.852 seconds
+[2022-10-04T04:52:47.428+0000] {processor.py:156} INFO - Started process (PID=2413) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:52:47.429+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:52:47.430+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:52:47.430+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:52:47.864+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:52:47.878+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:52:47.878+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:52:47.891+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:52:47.891+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:52:47.913+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.488 seconds
+[2022-10-04T04:53:23.244+0000] {processor.py:156} INFO - Started process (PID=2448) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:53:23.245+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:53:23.246+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:53:23.246+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:53:23.750+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:53:23.767+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:53:23.767+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:53:23.782+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:53:23.782+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:53:23.804+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.563 seconds
+[2022-10-04T04:53:57.148+0000] {processor.py:156} INFO - Started process (PID=2483) to work on /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:53:57.149+0000] {processor.py:758} INFO - Processing file /home/ubuntu/airflow/spotify_dag/airflow_dags.py for tasks to queue
+[2022-10-04T04:53:57.150+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:53:57.150+0000] {dagbag.py:525} INFO - Filling up the DagBag from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:53:57.604+0000] {processor.py:768} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /home/ubuntu/airflow/spotify_dag/airflow_dags.py
+[2022-10-04T04:53:57.617+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:53:57.617+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-04T04:53:57.631+0000] {logging_mixin.py:117} INFO - [2022-10-04T04:53:57.631+0000] {dag.py:3324} INFO - Setting next_dagrun for spotify_dag to 2022-10-04T00:00:00+00:00, run_after=2022-10-05T00:00:00+00:00
+[2022-10-04T04:53:57.651+0000] {processor.py:178} INFO - Processing /home/ubuntu/airflow/spotify_dag/airflow_dags.py took 0.507 seconds

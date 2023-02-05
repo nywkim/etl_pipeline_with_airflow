@@ -1,0 +1,39 @@
+[2023-01-25T06:14:46.374+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: practice.glue_job manual__2023-01-25T06:14:43.566387+00:00 [queued]>
+[2023-01-25T06:14:46.393+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: practice.glue_job manual__2023-01-25T06:14:43.566387+00:00 [queued]>
+[2023-01-25T06:14:46.394+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T06:14:46.394+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-25T06:14:46.394+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T06:14:46.405+0000] {taskinstance.py:1383} INFO - Executing <Task(GlueJobOperator): glue_job> on 2023-01-25 06:14:43.566387+00:00
+[2023-01-25T06:14:46.408+0000] {standard_task_runner.py:55} INFO - Started process 3718 to run task
+[2023-01-25T06:14:46.411+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'practice', 'glue_job', 'manual__2023-01-25T06:14:43.566387+00:00', '--job-id', '319', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmpw8qxvz0b']
+[2023-01-25T06:14:46.412+0000] {standard_task_runner.py:83} INFO - Job 319: Subtask glue_job
+[2023-01-25T06:14:46.471+0000] {task_command.py:376} INFO - Running <TaskInstance: practice.glue_job manual__2023-01-25T06:14:43.566387+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-25T06:14:46.543+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=practice
+AIRFLOW_CTX_TASK_ID=glue_job
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-25T06:14:43.566387+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-25T06:14:43.566387+00:00
+[2023-01-25T06:14:46.548+0000] {glue.py:141} INFO - Initializing AWS Glue Job: SpotifyGJ. Wait for completion: True
+[2023-01-25T06:14:46.552+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-25T06:14:46.552+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-25T06:14:47.433+0000] {glue.py:135} INFO - Iam Role Name: AWSGlueServiceRole-crawlerclass
+[2023-01-25T06:14:47.434+0000] {glue.py:266} INFO - Checking if job already exists: SpotifyGJ
+[2023-01-25T06:14:48.041+0000] {glue.py:305} INFO - Creating job: SpotifyGJ
+[2023-01-25T06:14:48.363+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T06:14:54.425+0000] {glue.py:241} INFO - Exiting Job jr_71f118a93cffeaa35f42365029e5aee687725f65aa77d759aba4c8a02a83f166 Run State: FAILED
+[2023-01-25T06:14:54.429+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/operators/glue.py", line 148, in execute
+    glue_job_run = glue_job.job_completion(self.job_name, glue_job_run["JobRunId"], self.verbose)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue.py", line 242, in job_completion
+    raise AirflowException(job_error_message)
+airflow.exceptions.AirflowException: Exiting Job jr_71f118a93cffeaa35f42365029e5aee687725f65aa77d759aba4c8a02a83f166 Run State: FAILED
+[2023-01-25T06:14:54.431+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=practice, task_id=glue_job, execution_date=20230125T061443, start_date=20230125T061446, end_date=20230125T061454
+[2023-01-25T06:14:54.442+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 319 for task glue_job (Exiting Job jr_71f118a93cffeaa35f42365029e5aee687725f65aa77d759aba4c8a02a83f166 Run State: FAILED; 3718)
+[2023-01-25T06:14:54.460+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-25T06:14:54.471+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

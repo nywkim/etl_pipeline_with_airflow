@@ -1,0 +1,52 @@
+[2023-01-31T10:39:20.374+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-01-31T10:39:18.880421+00:00 [queued]>
+[2023-01-31T10:39:20.379+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-01-31T10:39:18.880421+00:00 [queued]>
+[2023-01-31T10:39:20.379+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-31T10:39:20.379+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-31T10:39:20.379+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-31T10:39:20.392+0000] {taskinstance.py:1383} INFO - Executing <Task(S3ToRedshiftOperator): s3_to_redshift> on 2023-01-31 10:39:18.880421+00:00
+[2023-01-31T10:39:20.394+0000] {standard_task_runner.py:55} INFO - Started process 1448 to run task
+[2023-01-31T10:39:20.398+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag_prac', 's3_to_redshift', 'manual__2023-01-31T10:39:18.880421+00:00', '--job-id', '520', '--raw', '--subdir', 'DAGS_FOLDER/prac.py', '--cfg-path', '/tmp/tmp9ezyqv4o']
+[2023-01-31T10:39:20.399+0000] {standard_task_runner.py:83} INFO - Job 520: Subtask s3_to_redshift
+[2023-01-31T10:39:20.436+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-01-31T10:39:18.880421+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-31T10:39:20.486+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag_prac
+AIRFLOW_CTX_TASK_ID=s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-31T10:39:18.880421+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-31T10:39:18.880421+00:00
+[2023-01-31T10:39:20.490+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-31T10:39:20.492+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-31T10:39:20.492+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-31T10:39:20.501+0000] {s3_to_redshift.py:164} INFO - Executing COPY command...
+[2023-01-31T10:39:20.503+0000] {base.py:71} INFO - Using connection ID 'redshift_default' for task execution.
+[2023-01-31T10:39:20.519+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2023-01-31T10:39:20.826+0000] {sql.py:375} INFO - Running statement: 
+                    COPY spotify.gold 
+                    FROM 's3://airflow-nk/data/gold'
+                    credentials
+                    'aws_access_key_id=AKIA2RZBA5HRP7SVZGJC;aws_secret_access_key=***'
+                    csv;
+        , parameters: None
+[2023-01-31T10:39:21.220+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/transfers/s3_to_redshift.py", line 165, in execute
+    redshift_hook.run(sql, autocommit=self.autocommit)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+  File "/usr/local/lib/python3.10/dist-packages/redshift_connector/cursor.py", line 240, in execute
+    self._c.execute(self, operation, args)
+  File "/usr/local/lib/python3.10/dist-packages/redshift_connector/core.py", line 1783, in execute
+    self.handle_messages(cursor)
+  File "/usr/local/lib/python3.10/dist-packages/redshift_connector/core.py", line 1969, in handle_messages
+    raise self.error
+redshift_connector.error.ProgrammingError: {'S': 'ERROR', 'C': 'XX000', 'M': "Load into table 'gold' failed.  Check 'stl_load_errors' system table for details.", 'F': '../src/pg/src/backend/commands/commands_copy.c', 'L': '712', 'R': 'CheckMaxRowError'}
+[2023-01-31T10:39:21.225+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_dag_prac, task_id=s3_to_redshift, execution_date=20230131T103918, start_date=20230131T103920, end_date=20230131T103921
+[2023-01-31T10:39:21.238+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 520 for task s3_to_redshift ({'S': 'ERROR', 'C': 'XX000', 'M': "Load into table 'gold' failed.  Check 'stl_load_errors' system table for details.", 'F': '../src/pg/src/backend/commands/commands_copy.c', 'L': '712', 'R': 'CheckMaxRowError'}; 1448)
+[2023-01-31T10:39:21.252+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-31T10:39:21.264+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

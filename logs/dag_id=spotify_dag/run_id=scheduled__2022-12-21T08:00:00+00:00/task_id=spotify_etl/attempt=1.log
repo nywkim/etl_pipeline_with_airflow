@@ -1,0 +1,33 @@
+[2022-12-21T13:37:56.203+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl scheduled__2022-12-21T08:00:00+00:00 [queued]>
+[2022-12-21T13:37:56.210+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl scheduled__2022-12-21T08:00:00+00:00 [queued]>
+[2022-12-21T13:37:56.210+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21T13:37:56.210+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-12-21T13:37:56.210+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21T13:37:56.222+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): spotify_etl> on 2022-12-21 08:00:00+00:00
+[2022-12-21T13:37:56.225+0000] {standard_task_runner.py:55} INFO - Started process 1971 to run task
+[2022-12-21T13:37:56.229+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'spotify_etl', 'scheduled__2022-12-21T08:00:00+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmpqxu4hjbe']
+[2022-12-21T13:37:56.231+0000] {standard_task_runner.py:83} INFO - Job 93: Subtask spotify_etl
+[2022-12-21T13:37:56.271+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.spotify_etl scheduled__2022-12-21T08:00:00+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2022-12-21T13:37:56.314+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=spotify_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-21T08:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-21T08:00:00+00:00
+[2022-12-21T13:37:56.948+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/spotify_dag/spotify_dags.py", line 51, in find_songs
+    file_path = 's3://airflow-nk/' + run_time + '.csv'
+TypeError: can only concatenate str (not "datetime.datetime") to str
+[2022-12-21T13:37:56.952+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_dag, task_id=spotify_etl, execution_date=20221221T080000, start_date=20221221T133756, end_date=20221221T133756
+[2022-12-21T13:37:56.962+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 93 for task spotify_etl (can only concatenate str (not "datetime.datetime") to str; 1971)
+[2022-12-21T13:37:57.002+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-12-21T13:37:57.016+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

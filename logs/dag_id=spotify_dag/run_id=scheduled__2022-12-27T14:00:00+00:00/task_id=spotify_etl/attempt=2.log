@@ -1,0 +1,34 @@
+[2022-12-27T16:01:11.272+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl scheduled__2022-12-27T14:00:00+00:00 [queued]>
+[2022-12-27T16:01:11.278+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl scheduled__2022-12-27T14:00:00+00:00 [queued]>
+[2022-12-27T16:01:11.278+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T16:01:11.278+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-12-27T16:01:11.278+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T16:01:11.290+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): spotify_etl> on 2022-12-27 14:00:00+00:00
+[2022-12-27T16:01:11.294+0000] {standard_task_runner.py:55} INFO - Started process 35032 to run task
+[2022-12-27T16:01:11.297+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'spotify_etl', 'scheduled__2022-12-27T14:00:00+00:00', '--job-id', '208', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmpo1jve56f']
+[2022-12-27T16:01:11.299+0000] {standard_task_runner.py:83} INFO - Job 208: Subtask spotify_etl
+[2022-12-27T16:01:11.337+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.spotify_etl scheduled__2022-12-27T14:00:00+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2022-12-27T16:01:11.364+0000] {logging_mixin.py:120} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/utils/context.py:204 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-12-27T16:01:11.381+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=spotify_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T14:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T14:00:00+00:00
+[2022-12-27T16:01:15.461+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/spotify_dag/spotify_dags.py", line 63, in find_songs
+    "acousticness" : features["acousticness"],
+KeyError: 'acousticness'
+[2022-12-27T16:01:15.464+0000] {taskinstance.py:1401} INFO - Marking task as FAILED. dag_id=spotify_dag, task_id=spotify_etl, execution_date=20221227T140000, start_date=20221227T160111, end_date=20221227T160115
+[2022-12-27T16:01:15.475+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 208 for task spotify_etl ('acousticness'; 35032)
+[2022-12-27T16:01:15.481+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-12-27T16:01:15.492+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

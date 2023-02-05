@@ -1,0 +1,50 @@
+[2023-01-31T10:26:43.814+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-01-31T10:26:41.991878+00:00 [queued]>
+[2023-01-31T10:26:43.819+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-01-31T10:26:41.991878+00:00 [queued]>
+[2023-01-31T10:26:43.819+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-31T10:26:43.819+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-31T10:26:43.819+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-31T10:26:43.832+0000] {taskinstance.py:1383} INFO - Executing <Task(S3ToRedshiftOperator): s3_to_redshift> on 2023-01-31 10:26:41.991878+00:00
+[2023-01-31T10:26:43.834+0000] {standard_task_runner.py:55} INFO - Started process 7990 to run task
+[2023-01-31T10:26:43.838+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag_prac', 's3_to_redshift', 'manual__2023-01-31T10:26:41.991878+00:00', '--job-id', '516', '--raw', '--subdir', 'DAGS_FOLDER/prac.py', '--cfg-path', '/tmp/tmp89lmsr4l']
+[2023-01-31T10:26:43.839+0000] {standard_task_runner.py:83} INFO - Job 516: Subtask s3_to_redshift
+[2023-01-31T10:26:43.876+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-01-31T10:26:41.991878+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-31T10:26:43.925+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag_prac
+AIRFLOW_CTX_TASK_ID=s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-31T10:26:41.991878+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-31T10:26:41.991878+00:00
+[2023-01-31T10:26:43.928+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-31T10:26:43.930+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-31T10:26:43.931+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-31T10:26:43.940+0000] {s3_to_redshift.py:164} INFO - Executing COPY command...
+[2023-01-31T10:26:43.942+0000] {base.py:71} INFO - Using connection ID 'redshift_default' for task execution.
+[2023-01-31T10:26:43.959+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2023-01-31T10:28:54.860+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/redshift_connector/core.py", line 585, in __init__
+    self._usock.connect((host, port))
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/transfers/s3_to_redshift.py", line 165, in execute
+    redshift_hook.run(sql, autocommit=self.autocommit)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/common/sql/hooks/sql.py", line 342, in run
+    with closing(self.get_conn()) as conn:
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/redshift_sql.py", line 129, in get_conn
+    return redshift_connector.connect(**conn_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/redshift_connector/__init__.py", line 340, in connect
+    return Connection(
+  File "/usr/local/lib/python3.10/dist-packages/redshift_connector/core.py", line 632, in __init__
+    raise InterfaceError("communication error", e)
+redshift_connector.error.InterfaceError: ('communication error', TimeoutError(110, 'Connection timed out'))
+[2023-01-31T10:28:54.863+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_dag_prac, task_id=s3_to_redshift, execution_date=20230131T102641, start_date=20230131T102643, end_date=20230131T102854
+[2023-01-31T10:28:54.880+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 516 for task s3_to_redshift (('communication error', TimeoutError(110, 'Connection timed out')); 7990)
+[2023-01-31T10:28:54.923+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-31T10:28:54.932+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

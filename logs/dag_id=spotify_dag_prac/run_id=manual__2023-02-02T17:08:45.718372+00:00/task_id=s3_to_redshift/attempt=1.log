@@ -1,0 +1,44 @@
+[2023-02-02T17:08:47.635+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-02-02T17:08:45.718372+00:00 [queued]>
+[2023-02-02T17:08:47.641+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-02-02T17:08:45.718372+00:00 [queued]>
+[2023-02-02T17:08:47.641+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T17:08:47.641+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-02-02T17:08:47.641+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T17:08:47.657+0000] {taskinstance.py:1383} INFO - Executing <Task(S3ToRedshiftOperator): s3_to_redshift> on 2023-02-02 17:08:45.718372+00:00
+[2023-02-02T17:08:47.661+0000] {standard_task_runner.py:55} INFO - Started process 23587 to run task
+[2023-02-02T17:08:47.667+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag_prac', 's3_to_redshift', 'manual__2023-02-02T17:08:45.718372+00:00', '--job-id', '591', '--raw', '--subdir', 'DAGS_FOLDER/prac.py', '--cfg-path', '/tmp/tmpobjye0k8']
+[2023-02-02T17:08:47.669+0000] {standard_task_runner.py:83} INFO - Job 591: Subtask s3_to_redshift
+[2023-02-02T17:08:47.711+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag_prac.s3_to_redshift manual__2023-02-02T17:08:45.718372+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-02-02T17:08:47.764+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag_prac
+AIRFLOW_CTX_TASK_ID=s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-02T17:08:45.718372+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-02T17:08:45.718372+00:00
+[2023-02-02T17:08:47.768+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-02-02T17:08:47.771+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-02-02T17:08:47.771+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-02-02T17:08:47.780+0000] {s3_to_redshift.py:164} INFO - Executing COPY command...
+[2023-02-02T17:08:47.782+0000] {base.py:71} INFO - Using connection ID 'redshift_default' for task execution.
+[2023-02-02T17:08:47.798+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2023-02-02T17:08:48.105+0000] {sql.py:375} INFO - Running statement: CREATE TABLE #test (LIKE spotify.test);, parameters: None
+[2023-02-02T17:08:48.119+0000] {sql.py:375} INFO - Running statement: 
+                    COPY #test 
+                    FROM 's3://airflow-nk/listen_records_by_artists_test'
+                    credentials
+                    'aws_access_key_id=AKIA2RZBA5HRP7SVZGJC;aws_secret_access_key=***'
+                    FORMAT AS PARQUET;
+        , parameters: None
+[2023-02-02T17:08:48.259+0000] {sql.py:375} INFO - Running statement: BEGIN;, parameters: None
+[2023-02-02T17:08:48.266+0000] {sql.py:375} INFO - Running statement: DELETE FROM spotify.test USING #test WHERE test.day = #test.day;, parameters: None
+[2023-02-02T17:08:48.414+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-02-02T17:08:48.414+0000] {sql.py:375} INFO - Running statement: INSERT INTO spotify.test SELECT * FROM #test;, parameters: None
+[2023-02-02T17:08:48.444+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-02-02T17:08:48.444+0000] {sql.py:375} INFO - Running statement: COMMIT, parameters: None
+[2023-02-02T17:08:48.480+0000] {s3_to_redshift.py:166} INFO - COPY command complete...
+[2023-02-02T17:08:48.485+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=spotify_dag_prac, task_id=s3_to_redshift, execution_date=20230202T170845, start_date=20230202T170847, end_date=20230202T170848
+[2023-02-02T17:08:48.517+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-02-02T17:08:48.528+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

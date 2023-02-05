@@ -1,0 +1,165 @@
+[2023-01-25T08:00:41.360+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.crawl_s3 scheduled__2023-01-25T06:00:00+00:00 [queued]>
+[2023-01-25T08:00:41.367+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.crawl_s3 scheduled__2023-01-25T06:00:00+00:00 [queued]>
+[2023-01-25T08:00:41.367+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T08:00:41.367+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-25T08:00:41.367+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T08:00:41.379+0000] {taskinstance.py:1383} INFO - Executing <Task(GlueCrawlerOperator): crawl_s3> on 2023-01-25 06:00:00+00:00
+[2023-01-25T08:00:41.382+0000] {standard_task_runner.py:55} INFO - Started process 14933 to run task
+[2023-01-25T08:00:41.386+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'crawl_s3', 'scheduled__2023-01-25T06:00:00+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmpk640umdz']
+[2023-01-25T08:00:41.387+0000] {standard_task_runner.py:83} INFO - Job 335: Subtask crawl_s3
+[2023-01-25T08:00:41.430+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.crawl_s3 scheduled__2023-01-25T06:00:00+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-25T08:00:41.478+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=crawl_s3
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-25T06:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-25T06:00:00+00:00
+[2023-01-25T08:00:41.479+0000] {glue_crawler.py:55} INFO - Checking if crawler already exists: spotify-crawl
+[2023-01-25T08:00:41.483+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-25T08:00:41.484+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-25T08:00:42.144+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-25T08:00:42.145+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-25T08:00:42.429+0000] {glue_crawler.py:82} INFO - Triggering AWS Glue Crawler
+[2023-01-25T08:00:42.429+0000] {glue_crawler.py:151} INFO - Starting crawler spotify-crawl
+[2023-01-25T08:00:53.949+0000] {glue_crawler.py:85} INFO - Waiting for AWS Glue Crawler
+[2023-01-25T08:00:54.013+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:00:54.013+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:00:54.057+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:00:59.129+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:00:59.129+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:00:59.169+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:04.240+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:04.240+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:04.279+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:09.314+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:09.314+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:09.343+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:14.384+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:14.384+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:14.409+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:19.464+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:19.464+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:19.517+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:24.578+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:24.578+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:24.623+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:29.686+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:29.686+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:29.720+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:34.778+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:34.778+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:34.818+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:39.880+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:39.880+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:39.912+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:44.967+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:44.967+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:45.008+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:50.044+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:50.044+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:50.072+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:01:55.120+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:01:55.120+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:01:55.165+0000] {glue_crawler.py:199} INFO - Crawler should finish soon
+[2023-01-25T08:02:00.219+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:00.220+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:00.260+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:05.297+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:05.297+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:05.330+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:10.394+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:10.395+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:10.430+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:15.484+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:15.484+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:15.527+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:20.568+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:20.568+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:20.605+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:25.668+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:25.668+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:25.704+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:30.764+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:30.764+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:30.791+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:35.852+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:35.853+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:35.895+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:40.924+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:40.924+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:40.952+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:45.988+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:45.989+0000] {glue_crawler.py:189} INFO - State: RUNNING
+[2023-01-25T08:02:46.025+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:51.087+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:51.087+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:02:51.138+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:02:56.185+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:02:56.186+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:02:56.221+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:01.273+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:01.273+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:01.309+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:06.368+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:06.368+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:06.394+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:11.438+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:11.439+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:11.473+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:16.532+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:16.532+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:16.568+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:21.601+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:21.601+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:21.627+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:26.671+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:26.671+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:26.701+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:31.749+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:31.749+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:31.793+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:36.844+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:36.845+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:36.873+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:41.919+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:41.920+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:41.944+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:46.992+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:46.993+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:47.019+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:52.067+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:52.067+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:52.097+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:03:57.147+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:03:57.148+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:03:57.183+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:04:02.234+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:04:02.234+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:04:02.279+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:04:07.317+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:04:07.318+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:04:07.363+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:04:12.406+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:04:12.406+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:04:12.447+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:04:17.491+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:04:17.491+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:04:17.528+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:04:22.590+0000] {glue_crawler.py:188} INFO - Polling for AWS Glue crawler: spotify-crawl 
+[2023-01-25T08:04:22.590+0000] {glue_crawler.py:189} INFO - State: STOPPING
+[2023-01-25T08:04:22.638+0000] {glue_crawler.py:197} INFO - Estimated Time Left (seconds): 15
+[2023-01-25T08:04:27.687+0000] {glue_crawler.py:170} INFO - State: READY
+[2023-01-25T08:04:27.687+0000] {glue_crawler.py:171} INFO - crawler_config: {'Name': 'spotify-crawl', 'Role': 'service-role/AWSGlueServiceRole-crawlerclass', 'Targets': {'S3Targets': [{'Path': 's3://airflow-nk/logs', 'Exclusions': []}, {'Path': 's3://airflow-nk/sample', 'Exclusions': []}], 'JdbcTargets': [], 'MongoDBTargets': [], 'DynamoDBTargets': [], 'CatalogTargets': [], 'DeltaTargets': []}, 'DatabaseName': 'spotify', 'Classifiers': [], 'RecrawlPolicy': {'RecrawlBehavior': 'CRAWL_EVERYTHING'}, 'SchemaChangePolicy': {'UpdateBehavior': 'LOG', 'DeleteBehavior': 'LOG'}, 'LineageConfiguration': {'CrawlerLineageSettings': 'DISABLE'}, 'State': 'READY', 'CrawlElapsedTime': 0, 'CreationTime': datetime.datetime(2022, 10, 4, 6, 4, 16, tzinfo=tzlocal()), 'LastUpdated': datetime.datetime(2023, 1, 25, 7, 32, 30, tzinfo=tzlocal()), 'LastCrawl': {'Status': 'SUCCEEDED', 'LogGroup': '/aws-glue/crawlers', 'LogStream': 'spotify-crawl', 'MessagePrefix': '224112b6-4203-475b-8d83-e17520fb79aa', 'StartTime': datetime.datetime(2023, 1, 25, 8, 0, 42, tzinfo=tzlocal())}, 'Version': 17, 'LakeFormationConfiguration': {'UseLakeFormationCredentials': False, 'AccountId': ''}}
+[2023-01-25T08:04:27.717+0000] {glue_crawler.py:178} INFO - Status: SUCCEEDED
+[2023-01-25T08:04:27.717+0000] {glue_crawler.py:179} INFO - Last Runtime Duration (seconds): 126.47
+[2023-01-25T08:04:27.718+0000] {glue_crawler.py:180} INFO - Median Runtime Duration (seconds): 50.7775
+[2023-01-25T08:04:27.718+0000] {glue_crawler.py:181} INFO - Tables Created: 0
+[2023-01-25T08:04:27.718+0000] {glue_crawler.py:182} INFO - Tables Updated: 0
+[2023-01-25T08:04:27.718+0000] {glue_crawler.py:183} INFO - Tables Deleted: 0
+[2023-01-25T08:04:27.733+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=spotify_dag, task_id=crawl_s3, execution_date=20230125T060000, start_date=20230125T080041, end_date=20230125T080427
+[2023-01-25T08:04:27.784+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-25T08:04:27.800+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

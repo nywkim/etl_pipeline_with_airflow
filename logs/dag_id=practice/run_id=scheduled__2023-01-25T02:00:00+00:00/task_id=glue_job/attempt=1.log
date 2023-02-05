@@ -1,0 +1,53 @@
+[2023-01-25T05:32:52.166+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: practice.glue_job scheduled__2023-01-25T02:00:00+00:00 [queued]>
+[2023-01-25T05:32:52.172+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: practice.glue_job scheduled__2023-01-25T02:00:00+00:00 [queued]>
+[2023-01-25T05:32:52.172+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T05:32:52.172+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-25T05:32:52.172+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T05:32:52.184+0000] {taskinstance.py:1383} INFO - Executing <Task(GlueJobOperator): glue_job> on 2023-01-25 02:00:00+00:00
+[2023-01-25T05:32:52.186+0000] {standard_task_runner.py:55} INFO - Started process 1620 to run task
+[2023-01-25T05:32:52.190+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'practice', 'glue_job', 'scheduled__2023-01-25T02:00:00+00:00', '--job-id', '304', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmpooglh18a']
+[2023-01-25T05:32:52.191+0000] {standard_task_runner.py:83} INFO - Job 304: Subtask glue_job
+[2023-01-25T05:32:52.226+0000] {task_command.py:376} INFO - Running <TaskInstance: practice.glue_job scheduled__2023-01-25T02:00:00+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-25T05:32:52.270+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=practice
+AIRFLOW_CTX_TASK_ID=glue_job
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-25T02:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-25T02:00:00+00:00
+[2023-01-25T05:32:52.271+0000] {glue.py:141} INFO - Initializing AWS Glue Job: SpotifyGlueJob. Wait for completion: True
+[2023-01-25T05:32:52.275+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-25T05:32:52.275+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-25T05:32:53.137+0000] {glue.py:135} INFO - Iam Role Name: AWSGlueServiceRole-crawlerclass
+[2023-01-25T05:32:53.139+0000] {glue.py:266} INFO - Checking if job already exists: SpotifyGlueJob
+[2023-01-25T05:32:54.035+0000] {glue.py:288} INFO - Updating job: SpotifyGlueJob
+[2023-01-25T05:32:54.036+0000] {glue.py:158} ERROR - Failed to run aws glue job, error: Parameter validation failed:
+Invalid type for parameter JobUpdate.Command.ScriptLocation, value: None, type: <class 'NoneType'>, valid types: <class 'str'>
+[2023-01-25T05:32:54.036+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/operators/glue.py", line 146, in execute
+    glue_job_run = glue_job.initialize_job(self.script_args, self.run_job_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue.py", line 155, in initialize_job
+    job_name = self.create_or_update_glue_job()
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue.py", line 303, in create_or_update_glue_job
+    self.update_job(**config)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue.py", line 289, in update_job
+    self.get_conn().update_job(JobName=job_name, JobUpdate=job_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 919, in _make_api_call
+    request_dict = self._convert_to_request_dict(
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 990, in _convert_to_request_dict
+    request_dict = self._serializer.serialize_to_request(
+  File "/usr/local/lib/python3.10/dist-packages/botocore/validate.py", line 381, in serialize_to_request
+    raise ParamValidationError(report=report.generate_report())
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid type for parameter JobUpdate.Command.ScriptLocation, value: None, type: <class 'NoneType'>, valid types: <class 'str'>
+[2023-01-25T05:32:54.039+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=practice, task_id=glue_job, execution_date=20230125T020000, start_date=20230125T053252, end_date=20230125T053254
+[2023-01-25T05:32:54.049+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 304 for task glue_job (Parameter validation failed:
+Invalid type for parameter JobUpdate.Command.ScriptLocation, value: None, type: <class 'NoneType'>, valid types: <class 'str'>; 1620)
+[2023-01-25T05:32:54.086+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-25T05:32:54.099+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

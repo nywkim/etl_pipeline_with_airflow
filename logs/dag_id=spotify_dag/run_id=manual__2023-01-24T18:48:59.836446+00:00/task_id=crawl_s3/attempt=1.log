@@ -1,0 +1,40 @@
+[2023-01-24T18:49:13.819+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.crawl_s3 manual__2023-01-24T18:48:59.836446+00:00 [queued]>
+[2023-01-24T18:49:13.825+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.crawl_s3 manual__2023-01-24T18:48:59.836446+00:00 [queued]>
+[2023-01-24T18:49:13.825+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-24T18:49:13.825+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-24T18:49:13.825+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-24T18:49:13.839+0000] {taskinstance.py:1383} INFO - Executing <Task(GlueCrawlerOperator): crawl_s3> on 2023-01-24 18:48:59.836446+00:00
+[2023-01-24T18:49:13.842+0000] {standard_task_runner.py:55} INFO - Started process 1108 to run task
+[2023-01-24T18:49:13.846+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'crawl_s3', 'manual__2023-01-24T18:48:59.836446+00:00', '--job-id', '289', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmpqul975va']
+[2023-01-24T18:49:13.848+0000] {standard_task_runner.py:83} INFO - Job 289: Subtask crawl_s3
+[2023-01-24T18:49:13.889+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.crawl_s3 manual__2023-01-24T18:48:59.836446+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-24T18:49:13.939+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=crawl_s3
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-24T18:48:59.836446+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-24T18:48:59.836446+00:00
+[2023-01-24T18:49:13.940+0000] {glue_crawler.py:55} INFO - Checking if crawler already exists: spotify-crawl
+[2023-01-24T18:49:13.944+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-24T18:49:13.944+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-24T18:49:14.580+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/operators/glue_crawler.py", line 77, in execute
+    if self.hook.has_crawler(crawler_name):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue_crawler.py", line 58, in has_crawler
+    self.get_crawler(crawler_name)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue_crawler.py", line 70, in get_crawler
+    return self.glue_client.get_crawler(Name=crawler_name)["Crawler"]
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDeniedException: An error occurred (AccessDeniedException) when calling the GetCrawler operation: User: arn:aws:iam::725381868002:user/nywkim is not authorized to perform: glue:GetCrawler on resource: arn:aws:glue:ap-northeast-2:725381868002:crawler/spotify-crawl because no identity-based policy allows the glue:GetCrawler action
+[2023-01-24T18:49:14.585+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_dag, task_id=crawl_s3, execution_date=20230124T184859, start_date=20230124T184913, end_date=20230124T184914
+[2023-01-24T18:49:14.601+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 289 for task crawl_s3 (An error occurred (AccessDeniedException) when calling the GetCrawler operation: User: arn:aws:iam::725381868002:user/nywkim is not authorized to perform: glue:GetCrawler on resource: arn:aws:glue:ap-northeast-2:725381868002:crawler/spotify-crawl because no identity-based policy allows the glue:GetCrawler action; 1108)
+[2023-01-24T18:49:14.619+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-24T18:49:14.635+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

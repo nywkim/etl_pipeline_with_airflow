@@ -1,0 +1,62 @@
+[2023-02-02T18:02:50.778+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.delete_s3bucket_files manual__2023-02-02T18:02:48.376812+00:00 [queued]>
+[2023-02-02T18:02:50.784+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.delete_s3bucket_files manual__2023-02-02T18:02:48.376812+00:00 [queued]>
+[2023-02-02T18:02:50.784+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T18:02:50.784+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-02-02T18:02:50.784+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T18:02:50.798+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): delete_s3bucket_files> on 2023-02-02 18:02:48.376812+00:00
+[2023-02-02T18:02:50.800+0000] {standard_task_runner.py:55} INFO - Started process 26109 to run task
+[2023-02-02T18:02:50.804+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag_prac', 'delete_s3bucket_files', 'manual__2023-02-02T18:02:48.376812+00:00', '--job-id', '620', '--raw', '--subdir', 'DAGS_FOLDER/prac.py', '--cfg-path', '/tmp/tmpk2f2_4pw']
+[2023-02-02T18:02:50.805+0000] {standard_task_runner.py:83} INFO - Job 620: Subtask delete_s3bucket_files
+[2023-02-02T18:02:50.844+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag_prac.delete_s3bucket_files manual__2023-02-02T18:02:48.376812+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-02-02T18:02:50.893+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag_prac
+AIRFLOW_CTX_TASK_ID=delete_s3bucket_files
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-02T18:02:48.376812+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-02T18:02:48.376812+00:00
+[2023-02-02T18:02:50.937+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2023-02-02T18:02:51.087+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/spotify_dag/prac.py", line 33, in delete_files
+    s3_bucket.objects.all().delete()
+  File "/usr/local/lib/python3.10/dist-packages/boto3/resources/collection.py", line 561, in batch_action
+    return action(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/boto3/resources/action.py", line 134, in __call__
+    for page in parent.pages():
+  File "/usr/local/lib/python3.10/dist-packages/boto3/resources/collection.py", line 171, in pages
+    for page in pages:
+  File "/usr/local/lib/python3.10/dist-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/paginate.py", line 357, in _make_request
+    return self._method(**current_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 919, in _make_api_call
+    request_dict = self._convert_to_request_dict(
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 987, in _convert_to_request_dict
+    api_params = self._emit_api_params(
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 1026, in _emit_api_params
+    self.meta.events.emit(
+  File "/usr/local/lib/python3.10/dist-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/handlers.py", line 285, in validate_bucket_name
+    raise ParamValidationError(report=error_msg)
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid bucket name "airflow-nk/logs/": Bucket name must match the regex "^[a-zA-Z0-9.\-_]{1,255}$" or be an ARN matching the regex "^arn:(aws).*:(s3|s3-object-lambda):[a-z\-0-9]*:[0-9]{12}:accesspoint[/:][a-zA-Z0-9\-.]{1,63}$|^arn:(aws).*:s3-outposts:[a-z\-0-9]+:[0-9]{12}:outpost[/:][a-zA-Z0-9\-]{1,63}[/:]accesspoint[/:][a-zA-Z0-9\-]{1,63}$"
+[2023-02-02T18:02:51.098+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_dag_prac, task_id=delete_s3bucket_files, execution_date=20230202T180248, start_date=20230202T180250, end_date=20230202T180251
+[2023-02-02T18:02:51.112+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 620 for task delete_s3bucket_files (Parameter validation failed:
+Invalid bucket name "airflow-nk/logs/": Bucket name must match the regex "^[a-zA-Z0-9.\-_]{1,255}$" or be an ARN matching the regex "^arn:(aws).*:(s3|s3-object-lambda):[a-z\-0-9]*:[0-9]{12}:accesspoint[/:][a-zA-Z0-9\-.]{1,63}$|^arn:(aws).*:s3-outposts:[a-z\-0-9]+:[0-9]{12}:outpost[/:][a-zA-Z0-9\-]{1,63}[/:]accesspoint[/:][a-zA-Z0-9\-]{1,63}$"; 26109)
+[2023-02-02T18:02:51.140+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-02-02T18:02:51.150+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

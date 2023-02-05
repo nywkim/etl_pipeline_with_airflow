@@ -1,0 +1,29 @@
+[2023-01-31T16:06:28.043+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Spotify_etl_2.athena_agg manual__2023-01-31T16:06:25.535391+00:00 [queued]>
+[2023-01-31T16:06:28.048+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Spotify_etl_2.athena_agg manual__2023-01-31T16:06:25.535391+00:00 [queued]>
+[2023-01-31T16:06:28.048+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-31T16:06:28.049+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-31T16:06:28.049+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-31T16:06:28.061+0000] {taskinstance.py:1383} INFO - Executing <Task(AthenaOperator): athena_agg> on 2023-01-31 16:06:25.535391+00:00
+[2023-01-31T16:06:28.063+0000] {standard_task_runner.py:55} INFO - Started process 21263 to run task
+[2023-01-31T16:06:28.067+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Spotify_etl_2', 'athena_agg', 'manual__2023-01-31T16:06:25.535391+00:00', '--job-id', '533', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmp75ouqwh8']
+[2023-01-31T16:06:28.068+0000] {standard_task_runner.py:83} INFO - Job 533: Subtask athena_agg
+[2023-01-31T16:06:28.102+0000] {task_command.py:376} INFO - Running <TaskInstance: Spotify_etl_2.athena_agg manual__2023-01-31T16:06:25.535391+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-31T16:06:28.156+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Spotify_etl_2
+AIRFLOW_CTX_TASK_ID=athena_agg
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-31T16:06:25.535391+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-31T16:06:25.535391+00:00
+[2023-01-31T16:06:28.156+0000] {athena.py:98} INFO - Running Query with params: {'QueryString': '\n        SELECT "artist_name","day", count(*) as "listen_count"\n        FROM (SELECT day, track_id FROM "spotify"."records" WHERE day=\'2023-01-31\') a\n            JOIN (SELECT DISTINCT(track_id) as track_id, artist_name FROM "spotify"."tracks") b\n            ON a."track_id"=b."track_id"\n        group by "artist_name","day"\n        order by "listen_count" desc;\n    ', 'QueryExecutionContext': {'Database': 'spotify'}, 'ResultConfiguration': {'OutputLocation': 's3://airflow-nk/data/gold/{ds}.csv'}, 'WorkGroup': 'primary'}
+[2023-01-31T16:06:28.160+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-31T16:06:28.160+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-31T16:06:28.776+0000] {athena.py:101} INFO - Query execution id: aa87fe90-484b-488f-8eac-ac7b73a03f85
+[2023-01-31T16:06:28.793+0000] {athena.py:260} INFO - Query execution id: aa87fe90-484b-488f-8eac-ac7b73a03f85, trial 1: Query is still in non-terminal state - QUEUED
+[2023-01-31T16:06:58.911+0000] {athena.py:251} INFO - Query execution id: aa87fe90-484b-488f-8eac-ac7b73a03f85, trial 2: Query execution completed. Final state is SUCCEEDED
+[2023-01-31T16:06:58.926+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=Spotify_etl_2, task_id=athena_agg, execution_date=20230131T160625, start_date=20230131T160628, end_date=20230131T160658
+[2023-01-31T16:06:58.947+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-31T16:06:58.956+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

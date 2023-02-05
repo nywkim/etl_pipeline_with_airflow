@@ -1,0 +1,6 @@
+listened_at,track_id,track_name,artist_id,artist_name,acousticness,danceability,energy,liveness,loudness,instrumentalness,speechiness,tempo,valence,duration(ms),mode,key
+2023-01-25 14:58:03.116,1AZEKyJQKVucfisCqKO1Nk,Bets On Us,7DMveApC7UnC2NPfPvlHSU,Cheat Codes,0.103,0.52,0.787,0.305,-4.768,0.0,0.0536,170.059,0.573,180960,1,8
+2023-01-25 14:55:01.671,5lWUeSYO61UYgNlFlqcwYl,Lighter (feat. KSI),2gduEC76ry33RVurAvT05p,Nathan Dawe,0.0214,0.703,0.837,0.104,-3.606,4.45e-05,0.0395,124.953,0.356,182439,1,8
+2023-01-25 14:51:58.792,1ld659LV3sMK5sfsnyY586,Priceless,3ivAmma9JLS0z6LKXgYH5f,Grayson DeWolfe,0.472,0.799,0.633,0.0915,-4.138,0.0,0.0381,112.952,0.681,163619,1,8
+2023-01-25 14:49:14.167,2vrasrfR6mxxjcD5v5BuRT,Stay,68KmkJeZGfwe1OUaivBa2L,ATEEZ,0.112,0.713,0.911,0.0712,-3.911,0.0,0.0688,109.986,0.874,199007,1,6
+2023-01-25 14:45:54.692,6tF5SVu63mcy3bxzqpTiap,Mirror,2vjeuQwzSP5ErC1S41gONX,CHANMINA,0.00258,0.724,0.869,0.0355,-4.192,0.000111,0.045,139.979,0.975,211593,0,1

@@ -1,0 +1,35 @@
+[2023-01-29T18:16:14.641+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: peactice.athena_agg manual__2023-01-29T18:16:12.111568+00:00 [queued]>
+[2023-01-29T18:16:14.646+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: peactice.athena_agg manual__2023-01-29T18:16:12.111568+00:00 [queued]>
+[2023-01-29T18:16:14.646+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-29T18:16:14.646+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-29T18:16:14.646+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-29T18:16:14.660+0000] {taskinstance.py:1383} INFO - Executing <Task(AthenaOperator): athena_agg> on 2023-01-29 18:16:12.111568+00:00
+[2023-01-29T18:16:14.662+0000] {standard_task_runner.py:55} INFO - Started process 2129 to run task
+[2023-01-29T18:16:14.666+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'peactice', 'athena_agg', 'manual__2023-01-29T18:16:12.111568+00:00', '--job-id', '469', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmpwvtn8wxn']
+[2023-01-29T18:16:14.667+0000] {standard_task_runner.py:83} INFO - Job 469: Subtask athena_agg
+[2023-01-29T18:16:14.706+0000] {task_command.py:376} INFO - Running <TaskInstance: peactice.athena_agg manual__2023-01-29T18:16:12.111568+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-29T18:16:14.756+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=peactice
+AIRFLOW_CTX_TASK_ID=athena_agg
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-29T18:16:12.111568+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-29T18:16:12.111568+00:00
+[2023-01-29T18:16:14.756+0000] {athena.py:98} INFO - Running Query with params: {'QueryString': '\n        SELECT "artist_name","day", count(*) as "listen_count"\n        FROM (SELECT day, track_id FROM "spotify"."records" WHERE day=2023-01-29) a\n            JOIN (SELECT DISTINCT(track_id) as track_id, artist_name FROM "spotify"."tracks") b\n            ON a."track_id"=b."track_id"\n        group by "artist_name","day"\n        order by "listen_count" desc;\n    ', 'QueryExecutionContext': {'Database': 'spotify'}, 'ResultConfiguration': {'OutputLocation': 's3://airflow-nk/data/gold/{ds}'}, 'WorkGroup': 'primary'}
+[2023-01-29T18:16:14.760+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-29T18:16:14.761+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-29T18:16:15.362+0000] {athena.py:101} INFO - Query execution id: 5847b94b-b47a-43c5-bb0f-e19bc0d3f00a
+[2023-01-29T18:16:15.378+0000] {athena.py:260} INFO - Query execution id: 5847b94b-b47a-43c5-bb0f-e19bc0d3f00a, trial 1: Query is still in non-terminal state - QUEUED
+[2023-01-29T18:16:45.509+0000] {athena.py:251} INFO - Query execution id: 5847b94b-b47a-43c5-bb0f-e19bc0d3f00a, trial 2: Query execution completed. Final state is FAILED
+[2023-01-29T18:16:45.523+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/operators/athena.py", line 126, in execute
+    raise Exception(
+Exception: Final state of Athena job is FAILED, query_execution_id is 5847b94b-b47a-43c5-bb0f-e19bc0d3f00a. Error: SYNTAX_ERROR: line 2:70: '=' cannot be applied to varchar, integer
+[2023-01-29T18:16:45.526+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=peactice, task_id=athena_agg, execution_date=20230129T181612, start_date=20230129T181614, end_date=20230129T181645
+[2023-01-29T18:16:45.539+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 469 for task athena_agg (Final state of Athena job is FAILED, query_execution_id is 5847b94b-b47a-43c5-bb0f-e19bc0d3f00a. Error: SYNTAX_ERROR: line 2:70: '=' cannot be applied to varchar, integer; 2129)
+[2023-01-29T18:16:45.581+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-29T18:16:45.592+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

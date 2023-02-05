@@ -1,0 +1,58 @@
+[2023-02-02T18:20:28.412+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.delete_s3bucket_files manual__2023-02-02T18:20:26.688914+00:00 [queued]>
+[2023-02-02T18:20:28.417+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag_prac.delete_s3bucket_files manual__2023-02-02T18:20:26.688914+00:00 [queued]>
+[2023-02-02T18:20:28.418+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T18:20:28.418+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-02-02T18:20:28.418+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T18:20:28.432+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): delete_s3bucket_files> on 2023-02-02 18:20:26.688914+00:00
+[2023-02-02T18:20:28.436+0000] {standard_task_runner.py:55} INFO - Started process 26514 to run task
+[2023-02-02T18:20:28.440+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag_prac', 'delete_s3bucket_files', 'manual__2023-02-02T18:20:26.688914+00:00', '--job-id', '626', '--raw', '--subdir', 'DAGS_FOLDER/prac.py', '--cfg-path', '/tmp/tmppdcuki7x']
+[2023-02-02T18:20:28.441+0000] {standard_task_runner.py:83} INFO - Job 626: Subtask delete_s3bucket_files
+[2023-02-02T18:20:28.482+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag_prac.delete_s3bucket_files manual__2023-02-02T18:20:26.688914+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-02-02T18:20:28.531+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag_prac
+AIRFLOW_CTX_TASK_ID=delete_s3bucket_files
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-02T18:20:26.688914+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-02T18:20:26.688914+00:00
+[2023-02-02T18:20:28.545+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2023-02-02T18:20:28.811+0000] {logging_mixin.py:120} INFO - Deleting logs/
+[2023-02-02T18:20:28.832+0000] {logging_mixin.py:120} INFO - Deleting logs/20230125_17.csv
+[2023-02-02T18:20:28.859+0000] {logging_mixin.py:120} INFO - Deleting logs/20230125_21.csv
+[2023-02-02T18:20:28.884+0000] {logging_mixin.py:120} INFO - Deleting logs/20230125_23.csv
+[2023-02-02T18:20:28.906+0000] {logging_mixin.py:120} INFO - Deleting logs/20230126_01.csv
+[2023-02-02T18:20:28.926+0000] {logging_mixin.py:120} INFO - Deleting logs/20230126_22.csv
+[2023-02-02T18:20:28.945+0000] {logging_mixin.py:120} INFO - Deleting logs/20230126_23.csv
+[2023-02-02T18:20:28.971+0000] {logging_mixin.py:120} INFO - Deleting logs/20230127_01.csv
+[2023-02-02T18:20:28.992+0000] {logging_mixin.py:120} INFO - Deleting logs/20230127_03.csv
+[2023-02-02T18:20:29.016+0000] {logging_mixin.py:120} INFO - Deleting logs/20230127_17.csv
+[2023-02-02T18:20:29.039+0000] {logging_mixin.py:120} INFO - Deleting logs/20230127_19.csv
+[2023-02-02T18:20:29.059+0000] {logging_mixin.py:120} INFO - Deleting logs/20230127_21.csv
+[2023-02-02T18:20:29.083+0000] {logging_mixin.py:120} INFO - Deleting logs/20230127_23.csv
+[2023-02-02T18:20:29.103+0000] {logging_mixin.py:120} INFO - Deleting logs/20230128_17.csv
+[2023-02-02T18:20:29.124+0000] {logging_mixin.py:120} INFO - Deleting logs/20230128_19.csv
+[2023-02-02T18:20:29.147+0000] {logging_mixin.py:120} INFO - Deleting logs/20230128_23.csv
+[2023-02-02T18:20:29.167+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_01.csv
+[2023-02-02T18:20:29.190+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_03.csv
+[2023-02-02T18:20:29.210+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_15.csv
+[2023-02-02T18:20:29.232+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_17.csv
+[2023-02-02T18:20:29.252+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_19.csv
+[2023-02-02T18:20:29.274+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_21.csv
+[2023-02-02T18:20:29.295+0000] {logging_mixin.py:120} INFO - Deleting logs/20230129_23.csv
+[2023-02-02T18:20:29.318+0000] {logging_mixin.py:120} INFO - Deleting logs/20230130_01.csv
+[2023-02-02T18:20:29.338+0000] {logging_mixin.py:120} INFO - Deleting logs/20230130_03.csv
+[2023-02-02T18:20:29.359+0000] {logging_mixin.py:120} INFO - Deleting logs/20230131_19.csv
+[2023-02-02T18:20:29.381+0000] {logging_mixin.py:120} INFO - Deleting logs/20230131_21.csv
+[2023-02-02T18:20:29.400+0000] {logging_mixin.py:120} INFO - Deleting logs/20230201_01.csv
+[2023-02-02T18:20:29.421+0000] {logging_mixin.py:120} INFO - Deleting logs/20230201_17.csv
+[2023-02-02T18:20:29.448+0000] {logging_mixin.py:120} INFO - Deleting logs/20230202_21.csv
+[2023-02-02T18:20:29.466+0000] {logging_mixin.py:120} INFO - Deleting logs/20230202_23.csv
+[2023-02-02T18:20:29.488+0000] {logging_mixin.py:120} INFO - Deleting logs/20230203_01.csv
+[2023-02-02T18:20:29.510+0000] {logging_mixin.py:120} INFO - Deleting logs/20230203_03.csv
+[2023-02-02T18:20:29.532+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-02-02T18:20:29.536+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=spotify_dag_prac, task_id=delete_s3bucket_files, execution_date=20230202T182026, start_date=20230202T182028, end_date=20230202T182029
+[2023-02-02T18:20:29.574+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-02-02T18:20:29.584+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

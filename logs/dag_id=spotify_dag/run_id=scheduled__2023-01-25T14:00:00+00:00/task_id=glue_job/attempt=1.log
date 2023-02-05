@@ -1,0 +1,26 @@
+[2023-01-25T16:02:21.136+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.glue_job scheduled__2023-01-25T14:00:00+00:00 [queued]>
+[2023-01-25T16:02:21.142+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.glue_job scheduled__2023-01-25T14:00:00+00:00 [queued]>
+[2023-01-25T16:02:21.142+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T16:02:21.142+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-25T16:02:21.142+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T16:02:21.155+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): glue_job> on 2023-01-25 14:00:00+00:00
+[2023-01-25T16:02:21.158+0000] {standard_task_runner.py:55} INFO - Started process 42153 to run task
+[2023-01-25T16:02:21.162+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'glue_job', 'scheduled__2023-01-25T14:00:00+00:00', '--job-id', '365', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmp3inhch2c']
+[2023-01-25T16:02:21.163+0000] {standard_task_runner.py:83} INFO - Job 365: Subtask glue_job
+[2023-01-25T16:02:21.206+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.glue_job scheduled__2023-01-25T14:00:00+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-25T16:02:21.255+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=glue_job
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-25T14:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-25T14:00:00+00:00
+[2023-01-25T16:02:21.274+0000] {credentials.py:1048} INFO - Found credentials from IAM Role: EC2_S3_Af
+[2023-01-25T16:02:21.674+0000] {logging_mixin.py:120} INFO - {'JobRunId': 'jr_de30db156719b6b185ad9bbc43eb4c7c48a653a83911a8fe7e6274ceacf032e2', 'ResponseMetadata': {'RequestId': 'f3eb712a-796a-4c65-a58f-51bb99c34768', 'HTTPStatusCode': 200, 'HTTPHeaders': {'date': 'Wed, 25 Jan 2023 16:02:21 GMT', 'content-type': 'application/x-amz-json-1.1', 'content-length': '82', 'connection': 'keep-alive', 'x-amzn-requestid': 'f3eb712a-796a-4c65-a58f-51bb99c34768'}, 'RetryAttempts': 0}}
+[2023-01-25T16:02:21.675+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-25T16:02:21.679+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=spotify_dag, task_id=glue_job, execution_date=20230125T140000, start_date=20230125T160221, end_date=20230125T160221
+[2023-01-25T16:02:21.697+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-25T16:02:21.707+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,47 @@
+[2023-01-25T08:30:38.025+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: practice.glue_job manual__2023-01-25T08:30:35.823993+00:00 [queued]>
+[2023-01-25T08:30:38.030+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: practice.glue_job manual__2023-01-25T08:30:35.823993+00:00 [queued]>
+[2023-01-25T08:30:38.031+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T08:30:38.031+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-25T08:30:38.031+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25T08:30:38.042+0000] {taskinstance.py:1383} INFO - Executing <Task(GlueJobOperator): glue_job> on 2023-01-25 08:30:35.823993+00:00
+[2023-01-25T08:30:38.044+0000] {standard_task_runner.py:55} INFO - Started process 16331 to run task
+[2023-01-25T08:30:38.048+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'practice', 'glue_job', 'manual__2023-01-25T08:30:35.823993+00:00', '--job-id', '339', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmp3xkxa7xk']
+[2023-01-25T08:30:38.048+0000] {standard_task_runner.py:83} INFO - Job 339: Subtask glue_job
+[2023-01-25T08:30:38.083+0000] {task_command.py:376} INFO - Running <TaskInstance: practice.glue_job manual__2023-01-25T08:30:35.823993+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-25T08:30:38.129+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=practice
+AIRFLOW_CTX_TASK_ID=glue_job
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-25T08:30:35.823993+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-25T08:30:35.823993+00:00
+[2023-01-25T08:30:38.130+0000] {glue.py:141} INFO - Initializing AWS Glue Job: SpotifyGJ. Wait for completion: True
+[2023-01-25T08:30:38.133+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-25T08:30:38.134+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-25T08:30:38.975+0000] {glue.py:135} INFO - Iam Role Name: AWSGlueServiceRole-crawlerclass
+[2023-01-25T08:30:38.976+0000] {glue.py:266} INFO - Checking if job already exists: SpotifyGJ
+[2023-01-25T08:30:39.592+0000] {glue.py:288} INFO - Updating job: SpotifyGJ
+[2023-01-25T08:30:39.663+0000] {glue.py:290} INFO - Updated configurations: {'LogUri': 's3://aws-glue-assets-725381868002-ap-northeast-2/logs/glue-logs/SpotifyGJ', 'Command': {'Name': 'glueetl', 'ScriptLocation': 's3://aws-glue-assets-725381868002-ap-northeast-2/scripts/SpotifyGlueJob.py'}, 'MaxRetries': 1, 'MaxCapacity': 10}
+[2023-01-25T08:30:39.863+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:30:45.936+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:30:52.018+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:30:58.077+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:31:04.142+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:31:10.211+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:31:16.277+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:31:22.347+0000] {glue.py:244} INFO - Polling for AWS Glue Job SpotifyGJ current run state with status RUNNING
+[2023-01-25T08:31:28.397+0000] {glue.py:241} INFO - Exiting Job jr_4cb6f3b66587683dc4ec09c16172f944c98b8b53f7a92e10476baa1e24bc5741 Run State: FAILED
+[2023-01-25T08:31:28.404+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/operators/glue.py", line 148, in execute
+    glue_job_run = glue_job.job_completion(self.job_name, glue_job_run["JobRunId"], self.verbose)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/glue.py", line 242, in job_completion
+    raise AirflowException(job_error_message)
+airflow.exceptions.AirflowException: Exiting Job jr_4cb6f3b66587683dc4ec09c16172f944c98b8b53f7a92e10476baa1e24bc5741 Run State: FAILED
+[2023-01-25T08:31:28.406+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=practice, task_id=glue_job, execution_date=20230125T083035, start_date=20230125T083038, end_date=20230125T083128
+[2023-01-25T08:31:28.417+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 339 for task glue_job (Exiting Job jr_4cb6f3b66587683dc4ec09c16172f944c98b8b53f7a92e10476baa1e24bc5741 Run State: FAILED; 16331)
+[2023-01-25T08:31:28.445+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-25T08:31:28.459+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

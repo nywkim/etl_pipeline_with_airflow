@@ -1,0 +1,40 @@
+from datetime import timedelta, datetime
+from airflow import DAG
+from airflow.operators.python_operator import PythonOperator
+from airflow.utils.dates import days_ago
+from spotify_dags import token_refresh, find_songs
+
+
+default_args = {
+    'owner' : 'airflow',
+    'depends_on_past' : False,
+    'start_date' : days_ago(0,0,0,0,0),
+    'email' : ['nywkim@example.com'],
+    'email_on_failure' : False,
+    'email_on_retry' : False,
+    'retries' : 1,
+    'retry_delay' : timedelta(minutes=1)
+}
+
+dag = DAG(
+    'spotify_dag',
+    default_args=default_args,
+    description='My Spotify account ETL',
+    schedule_interval=timedelta(hours=2),
+)
+
+run_etl = PythonOperator(
+	task_id='spotify_etl',
+	python_callable=find_songs,
+	op_kwargs={
+		"year": "{{ execution_date.year }}",
+		"month": "{{ execution_date.month }}",
+		"day": "{{ execution_date.day }}",
+		"hour": "{{ execution_date.hour }}"
+	},
+	dag=dag,
+)
+
+
+
+run_etl

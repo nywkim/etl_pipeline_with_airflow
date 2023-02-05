@@ -1,0 +1,38 @@
+[2023-01-29T18:19:23.822+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: peactice.athena_agg manual__2023-01-29T18:19:21.647659+00:00 [queued]>
+[2023-01-29T18:19:23.828+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: peactice.athena_agg manual__2023-01-29T18:19:21.647659+00:00 [queued]>
+[2023-01-29T18:19:23.828+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-29T18:19:23.828+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-01-29T18:19:23.828+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-29T18:19:23.843+0000] {taskinstance.py:1383} INFO - Executing <Task(AthenaOperator): athena_agg> on 2023-01-29 18:19:21.647659+00:00
+[2023-01-29T18:19:23.845+0000] {standard_task_runner.py:55} INFO - Started process 2259 to run task
+[2023-01-29T18:19:23.849+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'peactice', 'athena_agg', 'manual__2023-01-29T18:19:21.647659+00:00', '--job-id', '472', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmp0xurjc4l']
+[2023-01-29T18:19:23.850+0000] {standard_task_runner.py:83} INFO - Job 472: Subtask athena_agg
+[2023-01-29T18:19:23.888+0000] {task_command.py:376} INFO - Running <TaskInstance: peactice.athena_agg manual__2023-01-29T18:19:21.647659+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2023-01-29T18:19:23.937+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=peactice
+AIRFLOW_CTX_TASK_ID=athena_agg
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-29T18:19:21.647659+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-29T18:19:21.647659+00:00
+[2023-01-29T18:19:23.938+0000] {athena.py:98} INFO - Running Query with params: {'QueryString': '\n        SELECT "artist_name","day", count(*) as "listen_count"\n        FROM (SELECT day, track_id FROM "spotify"."records" WHERE day==2023-01-29) a\n            JOIN (SELECT DISTINCT(track_id) as track_id, artist_name FROM "spotify"."tracks") b\n            ON a."track_id"=b."track_id"\n        group by "artist_name","day"\n        order by "listen_count" desc;\n    ', 'QueryExecutionContext': {'Database': 'spotify'}, 'ResultConfiguration': {'OutputLocation': 's3://airflow-nk/data/gold/{ds}'}, 'WorkGroup': 'primary'}
+[2023-01-29T18:19:23.941+0000] {base.py:71} INFO - Using connection ID 'aws_default' for task execution.
+[2023-01-29T18:19:23.942+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2023-01-29T18:19:24.480+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/operators/athena.py", line 112, in execute
+    self.query_execution_id = self.hook.run_query(
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/amazon/aws/hooks/athena.py", line 99, in run_query
+    response = self.get_conn().start_query_execution(**params)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InvalidRequestException: An error occurred (InvalidRequestException) when calling the StartQueryExecution operation: line 2:71: mismatched input '='. Expecting: 'ALL', 'ANY', 'SOME', <expression>
+[2023-01-29T18:19:24.483+0000] {taskinstance.py:1401} INFO - Marking task as UP_FOR_RETRY. dag_id=peactice, task_id=athena_agg, execution_date=20230129T181921, start_date=20230129T181923, end_date=20230129T181924
+[2023-01-29T18:19:24.497+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 472 for task athena_agg (An error occurred (InvalidRequestException) when calling the StartQueryExecution operation: line 2:71: mismatched input '='. Expecting: 'ALL', 'ANY', 'SOME', <expression>; 2259)
+[2023-01-29T18:19:24.542+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-01-29T18:19:24.552+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

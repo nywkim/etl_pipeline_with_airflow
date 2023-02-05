@@ -1,0 +1,30 @@
+[2022-11-03T05:49:05.588+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl manual__2022-11-03T05:37:16.735998+00:00 [queued]>
+[2022-11-03T05:49:05.606+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: spotify_dag.spotify_etl manual__2022-11-03T05:37:16.735998+00:00 [queued]>
+[2022-11-03T05:49:05.606+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-03T05:49:05.606+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-11-03T05:49:05.606+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-03T05:49:05.634+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): spotify_etl> on 2022-11-03 05:37:16.735998+00:00
+[2022-11-03T05:49:05.647+0000] {standard_task_runner.py:55} INFO - Started process 2217 to run task
+[2022-11-03T05:49:05.672+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'spotify_dag', 'spotify_etl', 'manual__2022-11-03T05:37:16.735998+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/airflow_dags.py', '--cfg-path', '/tmp/tmp7ykb9ga_']
+[2022-11-03T05:49:05.686+0000] {standard_task_runner.py:83} INFO - Job 81: Subtask spotify_etl
+[2022-11-03T05:49:05.795+0000] {task_command.py:376} INFO - Running <TaskInstance: spotify_dag.spotify_etl manual__2022-11-03T05:37:16.735998+00:00 [running]> on host ip-172-31-26-59.ap-northeast-2.compute.internal
+[2022-11-03T05:49:05.947+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nywkim@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=spotify_dag
+AIRFLOW_CTX_TASK_ID=spotify_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-03T05:37:16.735998+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-03T05:37:16.735998+00:00
+[2022-11-03T05:49:05.959+0000] {oauth2.py:471} INFO - User authentication requires interaction with your web browser. Once you enter your credentials and give authorization, you will be redirected to a url.  Paste that url you were directed to to complete the authorization.
+[2022-11-03T05:49:05.960+0000] {oauth2.py:436} INFO - Opened https://accounts.spotify.com/authorize?client_id=96011ab1ade840ee8811963bd589c340&response_type=code&redirect_uri=https%3A%2F%2Fmy.nywkim.com&scope=user-read-recently-played in your browser
+[2022-11-03T05:49:05.960+0000] {logging_mixin.py:120} INFO - Enter the URL you were redirected to: 
+[2022-11-03T05:49:30.885+0000] {local_task_job.py:227} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-11-03T05:49:30.892+0000] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 2217. PIDs of all processes in the group: [2217]
+[2022-11-03T05:49:30.892+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 2217
+[2022-11-03T05:50:30.903+0000] {process_utils.py:147} WARNING - process psutil.Process(pid=2217, name='airflow task runner: spotify_dag spotify_etl manual__2022-11-03T05:37:16.735998+00:00 81', status='stopped', started='05:49:05') did not respond to SIGTERM. Trying SIGKILL
+[2022-11-03T05:50:30.904+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGKILL to group 2217
+[2022-11-03T05:50:30.908+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2217, name='airflow task runner: spotify_dag spotify_etl manual__2022-11-03T05:37:16.735998+00:00 81', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='05:49:05') (2217) terminated with exit code Negsignal.SIGKILL
+[2022-11-03T05:50:30.909+0000] {standard_task_runner.py:168} ERROR - Job 81 was killed before it finished (likely due to running out of memory)
