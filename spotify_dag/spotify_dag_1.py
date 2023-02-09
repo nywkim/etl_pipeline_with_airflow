@@ -5,7 +5,7 @@ from airflow.operators.python import BranchPythonOperator
 from airflow.operators.dummy import DummyOperator
 from airflow.providers.amazon.aws.operators.glue_crawler import GlueCrawlerOperator
 from airflow.utils.dates import days_ago
-from spotify_dags import token_refresh, find_songs, GlueJobRun
+from spotify_etl import token_refresh, find_songs, GlueJobRun
 
 default_args = {
     'owner' : 'airflow',
