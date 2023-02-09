@@ -26,12 +26,12 @@
 
 ![image](https://user-images.githubusercontent.com/86825023/217900645-50487f5d-1e16-4807-902d-d2d70bdfb997.png)
 
-## 프로젝트 요약
+**간단한 내용**
 
 - AWS EC2 내에서 Apache Airflow 활용하여 DAG를 일정 시간마다 스케쥴링
 - Spotify API를 활용하여 유저의 데이터를 가져와, ETL Pipeline을 거쳐 Data Lake, DW에 분석 가능한 데이터로 저장
 
-## 데이터 설명
+**데이터 설명**
 
 - 본인이 최근 감상한 음악의 MetaData를 추출
     - day, hour : 날짜와 시간
@@ -40,19 +40,19 @@
     - 그 외 향후 ML을 위한 음악의 음악적 특성과 기본 정보가 담긴 수치화된 데이터들
         - 댄서블한, 악기적인, 에너지 등의 특성과 음원의 길이 등
         
-## 파일 설명 (spotify_dag)
+**파일 설명 (spotify_dag)**
 
 - spotify_dag_1 : raw data to transform
 - spotify_dag_2 : aggregation to load
 - spotify_etl, refresh : Python Scripts
 
-## 프로젝트 결과
+**결과**
 
 - ETL 작업 스케쥴링으로 편해진 엔지니어링
 - 데이터 흐름의 자동화와 간편해진 모니터링
 - Data Lake 및 Data Warehouse 활용으로 적재적소에 데이터 제공 및 분석 용이
 
-## 추후 과제
+**추후 과제**
 
 - 대용량 데이터의 ETL 대비 아키텍쳐 구성
 - Sagemaker 등의 활용으로 ML Pipeline 구현
