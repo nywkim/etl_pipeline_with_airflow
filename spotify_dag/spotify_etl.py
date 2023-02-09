@@ -7,21 +7,17 @@ from secret import spotify_user_id, spotify_token, discover_weekly_id
 from refresh import Refresh
 
 def token_refresh():
+    # API를 사용하기 위한 Token을 Refresh하여 재사용이 가능하도록 하는 함수입니다.
     refreshCaller = Refresh()
 
     new_token = refreshCaller.refresh()
     return new_token
 
 def find_songs(year, month, day, hour, **_):
-    now_time = f'{year}-{month}-{day} {hour}:00:00'
-    run_time = datetime.strptime(now_time, '%Y-%m-%d %H:%M:%S') + timedelta(hours=9)
 
-    if (int(hour) >= 15) is True :
-        n_day = int(day) + 1
-        day = str(n_day)
     # 유저의 2시간(DAG interval time)동안 쌓인 음악 데이터를 조회한 후 Transform하여, 저장소로 보내는 함수입니다.
     # DAG를 실행하는 시간 그대로 (정각으로) 설정하여 저장해둡니다. 해당 datetime은 아래에서 쓰일 예정입니다.
-    now_time = datetime.today().strftime('%Y-%m-%d %H:00:00')
+    now_time = f'{year}-{month}-{day} {hour}:00:00'
     run_time = datetime.strptime(now_time, '%Y-%m-%d %H:%M:%S') + timedelta(hours=9)
 
     # spotify API를 주기적으로 실행하기 위한 함수를 불러와 새로운 토큰을 발급합니다. 이후 쿼리를 설정합니다.
@@ -38,15 +34,15 @@ def find_songs(year, month, day, hour, **_):
     if (latest_scr > run_time) == True :
         response_json["items"] = response_json["items"][1:]
 
-    # 이어 'latest_scr'이 2시간 내에 들은 음악이 아니면 해당 DAG를 간단한 출력으로 끝마칩니다.
-    # 아니라면, 2시간 내에 들은 음악들을 Transform 이후, csv형태로 저장하여 저장소로 보냅니다.
+    # 이어 'latest_scr'이 2시간 내에 들은 음악이 아니면 해당 DAG를 간단한 출력으로 끝마칩니다. > 'break_time' task
     if (timedelta(hours=2) >= run_time - latest_scr) == False :
         print("see you next interval")
         return "break_time"
-
+    # 아니라면, 2시간 내에 들은 음악들을 Transform 이후, csv형태로 저장하여 저장소로 보냅니다. > 'etl_start' task
     else :
         song_list = []
         for f_song in response_json["items"] :
+            # KST 기준 수정 + 해당 Interval내가 아닐 시, 'song_list'로의 저장을 멈춥니다.
             listened_time = datetime.strptime(f_song["played_at"],'%Y-%m-%dT%H:%M:%S.%fZ') + timedelta(hours=9)
 
             if (timedelta(hours=2) >= run_time - listened_time) == False :
@@ -55,6 +51,7 @@ def find_songs(year, month, day, hour, **_):
             listened_day = datetime.strftime(listened_time, '%Y-%m-%d')
             listened_hour = datetime.strftime(listened_time, '%H')
             track_id = f_song["track"]["id"]
+            # 음악의 특성을 불러오는 함수는 api가 다르므로, 별도로 불러옵니다.
             query_2 = "https://api.spotify.com/v1/audio-features/{}".format(track_id)
             response_2 = requests.get(query_2, headers={"Content-Type": "application/json", "Authorization": "Bearer {}".format(spotify_token)})
             features = response_2.json()
@@ -82,6 +79,7 @@ def find_songs(year, month, day, hour, **_):
 
             song_list.append(results)
 
+        # else문의 마지막으로, csv 형태로 해당 버킷 폴더에 저장합니다.
         df = pd.DataFrame(song_list)
         s3 = boto3.client('s3')
         str_nt = run_time.strftime('%Y%m%d_%H')
@@ -93,6 +91,7 @@ def find_songs(year, month, day, hour, **_):
         return "etl_start"
 
 def GlueJobRun():
+    # Glue Job을 Run하기 위한 함수입니다.
     client = boto3.client('glue',region_name='ap-northeast-2')
 
     response = client.start_job_run(
