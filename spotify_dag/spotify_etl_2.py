@@ -40,6 +40,7 @@ athena_agg = AthenaOperator(
     dag=dag,
 )
 
+
 def delete_files() :
     s3_client = boto3.client('s3')
 
@@ -49,19 +50,19 @@ def delete_files() :
         print('Deleting', object['Key'])
         s3_client.delete_object(Bucket=BUCKET, Key=object['Key'])
 
-
 delete_bronze_logs = PythonOperator(
     task_id='delete_bronze_logs',
     python_callable=delete_files,
     dag=dag,
 )
 
+
 s3_to_redshift = S3ToRedshiftOperator(
     task_id='s3_to_redshift',
     schema='dev.spotify',
     table='listen_records_by_artists',
     s3_bucket='airflow-nk',
-    s3_key='data/listen_records_by_artists_test',
+    s3_key='data/listen_records_by_artists',
     copy_options=["FORMAT AS PARQUET"],
     method='UPSERT',
     upsert_keys=['day'],
